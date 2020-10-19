@@ -5,13 +5,44 @@
 
 .fullSize {
   width: 100%;
-  background-color: #c75e5e;
-  height: 90%;
+  background-color: #f0f0f5;
+  height: 700px;
+}
+
+.menuSize {
+  width: 25%;
+  height: 100%;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+.ulElem ul {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-top: 10px;
+}
+
+.ulElem ul li {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  text-align: center;
+  margin-top: 5px;
+  padding-top: 3px;
+  background-color: #cfcfcf;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .endi {
   width: 100%;
-  height: 10%;
-  background-color: green;
+  height: 50px;
+  background-color: #7FB3D5;
+}
+
+.SpanIcon {
+  float: right;
+  margin-right: 12px;
 }
 /*# sourceMappingURL=style.css.map */

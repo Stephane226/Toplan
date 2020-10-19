@@ -4,8 +4,8 @@
 
 }
 //STOCKAGE DES VARIABLES
-$ThemeColor:green;
-$BG:rgb(199, 94, 94);
+$ThemeColor:#7FB3D5;
+$BG:rgb(240, 240, 245);
 $FULL:100%;
 
 
@@ -15,10 +15,46 @@ $FULL:100%;
 .fullSize{
     width:$FULL;
     background-color:$BG;
-    height:90%;
+    height:700px;
 }
+.menuSize{
+  width:25%;
+  height:100%;
+  background-color: whitesmoke;
+  position:relative;
+}
+.ulElem ul{
+    position:absolute;
+    width:100%;
+    height:100%;
+    padding-top:10px;
+}
+.ulElem ul li{
+    width:100%;
+    height:50px;
+    list-style: none;
+    text-align:center;
+    margin-top:5px;
+    padding-top:3px;
+    background-color:rgb(207, 207, 207);
+    font-size:21px;
+    font-weight:500;
+    
+ }
+
 .endi{
     width:$FULL;
-    height:10%;
+    height:50px;
     background-color:$ThemeColor;
+   
+   
+}
+.forPc{
+//background-image: ;
+}
+
+.SpanIcon{
+    
+    float:right;
+    margin-right:12px;
 }
