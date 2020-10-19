@@ -66,7 +66,7 @@ $FULL:100%;
    
 }
 .forPc{
-    height:400px;
+    height:360px;
     width:100%;
 background-image:url('img/moon.jpg');
 background-size:cover;
@@ -95,5 +95,27 @@ background-size:cover;
     text-align:center;
     padding-top:7px;
  
+
+}
+
+.placeH{
+    margin:5px;
+    width:90%;
+    height:90%;
+    background-color:rgb(250, 248, 248);
+    margin:0 auto;
+  
+ 
+}
+.addTodo{
+    width:50%;
+    display:flex;
+    justify-content:space-between;
+    height:100px;
+    
+}
+.addTodo input{
+    width:130px;;
+    height:40px;
 
 }

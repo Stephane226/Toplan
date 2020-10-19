@@ -55,7 +55,7 @@
 }
 
 .forPc {
-  height: 400px;
+  height: 360px;
   width: 100%;
   background-image: url("img/moon.jpg");
   background-size: cover;
@@ -81,5 +81,29 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 7px;
+}
+
+.placeH {
+  margin: 5px;
+  width: 90%;
+  height: 90%;
+  background-color: #faf8f8;
+  margin: 0 auto;
+}
+
+.addTodo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100px;
+}
+
+.addTodo input {
+  width: 130px;
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
