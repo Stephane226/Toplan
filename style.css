@@ -9,6 +9,12 @@
   height: 700px;
 }
 
+.fullSize {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .menuSize {
   width: 25%;
   height: 100%;
@@ -17,10 +23,10 @@
 }
 
 .ulElem ul {
-  position: absolute;
   width: 100%;
   height: 100%;
-  padding-top: 10px;
+  padding-top: 0px;
+  margin-bottom: 3px;
 }
 
 .ulElem ul li {
@@ -31,18 +37,49 @@
   margin-top: 5px;
   padding-top: 3px;
   background-color: #cfcfcf;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 500;
+}
+
+.ulElem ul li:hover {
+  background-color: #183153;
+  color: whitesmoke;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 .endi {
   width: 100%;
   height: 50px;
-  background-color: #7FB3D5;
+  background-color: #183153;
+}
+
+.forPc {
+  height: 400px;
+  width: 100%;
+  background-image: url("img/moon.jpg");
+  background-size: cover;
 }
 
 .SpanIcon {
   float: right;
   margin-right: 12px;
+}
+
+.contentSize {
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.title {
+  height: 40px;
+  width: 100%;
+  background-color: #cfcfcf;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 7px;
 }
 /*# sourceMappingURL=style.css.map */
