@@ -1,9 +1,24 @@
-h1{
-    color:green;
-    h2{
-        color:black
-    }
+*{
+    padding:0;
+    margin:0;
+
 }
-.p{
-    color:yellow;
+//STOCKAGE DES VARIABLES
+$ThemeColor:green;
+$BG:rgb(199, 94, 94);
+$FULL:100%;
+
+
+
+
+//FIN DES VARIABLES
+.fullSize{
+    width:$FULL;
+    background-color:$BG;
+    height:90%;
+}
+.endi{
+    width:$FULL;
+    height:10%;
+    background-color:$ThemeColor;
 }
