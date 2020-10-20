@@ -197,6 +197,15 @@
   margin: 15px;
 }
 
+.ds2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .ds3:hover {
   cursor: pointer;
 }
@@ -207,5 +216,14 @@
 
 .ds4:hover {
   cursor: pointer;
+}
+
+#dateH {
+  font-size: 14px;
+  color: #f9fceb;
+}
+
+.green {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

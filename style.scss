@@ -211,6 +211,10 @@ background-color: rgb(233, 233, 233);
     }
   
 }
+.ds2{
+    display:flex;
+    justify-content: space-between;
+}
 
 .ds3:hover{
     cursor:pointer;
@@ -220,4 +224,12 @@ background-color: rgb(233, 233, 233);
 }
 .ds4:hover{
     cursor:pointer;
+   
+}
+#dateH{
+    font-size:14px;
+    color:rgb(249, 252, 235)
+}
+.green{
+    color:green
 }
