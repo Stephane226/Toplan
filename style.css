@@ -130,7 +130,7 @@
 .oneTdL {
   width: 90%;
   height: 50px;
-  background-color: green;
+  background-color: #eaf3ea;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -140,33 +140,51 @@
 #s1 {
   width: 7%;
   height: 50px;
-  background-color: red;
+  background-color: #183153;
   font-size: 19px;
-  padding: auto;
+  color: white;
   font-weight: 800;
-  padding-left: 5px;
+}
+
+#s1 #numb {
+  margin: 15px;
 }
 
 #s2 {
   width: 80%;
   font-size: 19px;
   height: 50px;
-  background-color: #3951a0;
+  background-color: #686666;
+  color: white;
 }
 
 #s3 {
   width: 7%;
   height: 50px;
   font-size: 19px;
-  padding: auto;
-  padding-left: 5px;
+  background-color: #dddbdb;
+}
+
+#s3 .far {
+  margin: 15px;
 }
 
 #s4 {
   width: 7%;
   height: 50px;
   font-size: 19px;
-  padding: auto;
-  padding-left: 5px;
+  background: #cacaca;
+}
+
+#s4 .fas {
+  margin: 15px;
+}
+
+.ds3:hover {
+  cursor: pointer;
+}
+
+.ds4:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
