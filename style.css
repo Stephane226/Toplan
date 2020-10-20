@@ -231,7 +231,11 @@
   color: red;
 }
 
-.tgf3 {
+.redD {
+  color: red;
+}
+
+.tgf1, .tgf2, .tgf3, .tgf4, .tgf5, .tgf6, .tgf7, .tgf8, .tgf9, .tgf10, .tgf11, .tgf12, .tgf13, .tgf14, .tgf15 {
   color: red;
 }
 /*# sourceMappingURL=style.css.map */
