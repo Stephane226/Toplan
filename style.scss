@@ -143,6 +143,12 @@ border:none;
     background-color:rgb(234, 243, 234);
     margin:5px;
     display:flex;
+   
+}
+#oneTd{
+    height:500px;
+    width:100%;
+    overflow-y: scroll;
 }
 #s1{
 width:7%;
@@ -176,7 +182,18 @@ color:white;
 height:50px;
 font-size:19px;
 background-color: rgb(221, 219, 219);
- .far{
+ .fas{
+    margin:15px;
+    
+}
+
+}
+#s3a{
+    width:7%;
+height:50px;
+font-size:19px;
+background-color: rgb(233, 233, 233);
+ .fas{
     margin:15px;
     
 }
@@ -196,6 +213,9 @@ background-color: rgb(221, 219, 219);
 }
 
 .ds3:hover{
+    cursor:pointer;
+}
+.ds3a:hover{
     cursor:pointer;
 }
 .ds4:hover{
