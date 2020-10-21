@@ -14,8 +14,11 @@ var number = 1;
 
 function AddTodo(){
     if(TodoTitle.value == '' || TodoDate.value == ""){
-    alert("no")
-    }else{
+    alert("Please Fill The Information")
+    }else if(TodoDate.value.indexOf('/') !=-1){
+        alert("Please Enter A Valid Date")
+    }
+    else{
 
         
             var TodoContent = `
@@ -24,7 +27,7 @@ function AddTodo(){
               <div id="s2" class="ds2"><span class="txt"> ${TodoTitle.value}</span><span id="dateH">${TodoDate.value}</span></div>
               <div id="s3" class="ds3 ${"tgt"+number}" ><i class="fas fa-check"></i></div>
               <div id="s3a" class="ds3a ${"tgf"+number}"><i class="fas fa-times"></i></div>
-              <div id="s4" class="ds4"><i class="fas fa-trash-alt"></i></div>
+              <div id="s4" class="ds4 ${"sil"+number}"><i class="fas fa-trash-alt"></i></div>
             
             </div>
             `;
@@ -286,11 +289,20 @@ notDone15.addEventListener("click", function(){
     document.querySelector(".tgt15").style.color = "black"
    
   
+});
+var delete1 = document.querySelector(".sil1");
+delete1.addEventListener("click", function(){
+  var delete11 =  delete1.parentElement
+  delete11.style.backgroundColor = 'black';
+    alert(this.parentElement)
 })
 //End
 
 
-        }
+}
+
+
+
         
 }
 //CLICK FOR DELETE AND SELECT
