@@ -262,11 +262,11 @@
 
 .addBx {
   background-color: white;
-  width: 100%;
+  width: 90%;
   height: 70px;
   margin-top: -10px;
-  border-left: 1px solid #f0f0f5;
-  border-right: 1px solid #f0f0f5;
+  border-left: 11px solid #f0f0f5;
+  border-right: 11px solid #f0f0f5;
 }
 
 .C {
@@ -292,12 +292,76 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: #065e28;
 }
 
 .expences {
   margin-top: 17px;
   margin-bottom: 7px;
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  margin: 0px 0px 10px 0px;
+  padding-top: 10px;
+  border-left: 11px solid #f0f0f5;
+  border-right: 11px solid #f0f0f5;
+}
+
+.status .fas {
+  font-size: 70px;
+  margin-left: 10px;
+  color: #183153;
+}
+
+.status p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 19px;
+}
+
+.historique {
+  border-left: 2px solid #f0f0f5;
+  border-right: 2px solid #f0f0f5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.historique ul {
+  list-style: none;
+}
+
+.historique ul li {
+  margin: 3px;
+  padding: 5px;
+  background-color: aliceblue;
+  border-top: 1px solid black;
+  height: 30px;
+}
+
+.scroll-y {
+  height: 210px;
+  overflow-y: scroll;
+}
+
+.bgk {
+  height: 50px;
+  width: 100%;
+  background-color: #183153;
+  color: wheat;
+}
+
+.historique > div {
+  width: 49%;
 }
 /*# sourceMappingURL=style.css.map */
