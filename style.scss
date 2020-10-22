@@ -3,8 +3,9 @@
     margin:0;
 
 }
+//#183153;
 //STOCKAGE DES VARIABLES
-$ThemeColor:#183153;
+$ThemeColor:#177485;
 $BG:rgb(240, 240, 245);
 $FULL:100%;
 
@@ -347,6 +348,17 @@ background-color: rgb(233, 233, 233);
 .scroll-y{
     height:210px;
     overflow-y:scroll;
+    ul{
+        list-style: none;
+        border-bottom:4px solid black;
+        li{
+            margin:3px;
+            padding:5px;
+            background-color:rgb(240, 248, 255);
+            border-top:1px solid black;
+            height:20px;
+        }
+    }
 }
 .bgk{
     height:50px;

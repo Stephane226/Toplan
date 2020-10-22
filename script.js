@@ -5,7 +5,7 @@ var TodoDate = document.getElementById("TdDate");
 var Sub = document.getElementById("AddTD");
 var innerDom = document.getElementById("oneTd");
 var number = 1;
-
+var ul = document.createElement("ul");
 
 
 //
@@ -354,9 +354,26 @@ budget_add.addEventListener("click", function(){
     balance_Screen.innerHTML =   x4 + x3;
 
     budget_Add_Value.value = "";
+    //history
+  
+  
+   var li = document.createElement("li");
+   var span = document.createElement("span");
+   span.style.color= "green";
+   span.style.float = "right";
+   li.innerHTML = x3;
+span.innerHTML = "12/09/2019";
+
+   li.appendChild(span);
+  
+  
+  document.getElementById("ulList1").appendChild(li);
+  
 
 
 })
+
+
 // Substract Money
 Expense_Add.addEventListener("click", function(){
     var y1 = expense_Screen.textContent;
@@ -373,12 +390,17 @@ Expense_Add.addEventListener("click", function(){
     balance_Screen.innerHTML =   y4 - y3;
    Expense_Add.value = "";
 
-   alert(Expense_T.value);
-   var My_li = document.createElement("li");
-   var Exp_Ul = document.getElementById("Exp");
-   My_li.appendChild(Expense_T.value);
-   Exp_Ul.appendChild(My_li);
-   alert(My_li)
+   var li = document.createElement("li");
+   var span = document.createElement("span");
+   span.style.color= "red";
+   span.style.float = "right";
+   li.innerHTML = Expense_T.value;
+span.innerHTML = y3;
+
+   li.appendChild(span);
+  
+   ul.appendChild(li);
+  document.getElementById("ulList2").appendChild(ul);
   }
 
 })

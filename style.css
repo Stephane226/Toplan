@@ -42,7 +42,7 @@
 }
 
 .ulElem ul li:hover {
-  background-color: #183153;
+  background-color: #177485;
   color: whitesmoke;
   cursor: pointer;
   font-size: 20px;
@@ -51,7 +51,7 @@
 .endi {
   width: 100%;
   height: 50px;
-  background-color: #183153;
+  background-color: #177485;
 }
 
 .forPc {
@@ -126,7 +126,7 @@
   height: 40px;
   color: white;
   border: none;
-  background-color: #183153;
+  background-color: #177485;
   font-size: 18px;
   padding: 3px;
   cursor: pointer;
@@ -155,7 +155,7 @@
 #s1 {
   width: 7%;
   height: 50px;
-  background-color: #183153;
+  background-color: #177485;
   font-size: 19px;
   color: white;
   font-weight: 800;
@@ -257,7 +257,7 @@
 .xBtn {
   height: 32px;
   width: 60px;
-  background-color: #183153;
+  background-color: #177485;
   color: #fceeee;
   font-size: 15px;
   border-style: none;
@@ -363,10 +363,23 @@
   overflow-y: scroll;
 }
 
+.scroll-y ul {
+  list-style: none;
+  border-bottom: 4px solid black;
+}
+
+.scroll-y ul li {
+  margin: 3px;
+  padding: 5px;
+  background-color: aliceblue;
+  border-top: 1px solid black;
+  height: 20px;
+}
+
 .bgk {
   height: 50px;
   width: 100%;
-  background-color: #183153;
+  background-color: #177485;
   color: wheat;
 }
 
