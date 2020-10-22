@@ -18,8 +18,8 @@
           <div class="menuSize">
               <div class="ulElem">
                   <ul>
-                      <li>Todo List <span class="SpanIcon"><i class="fas fa-clipboard-list"></i> </span></li>
-                      <li>Money Management<span class="SpanIcon"> <i class="fas fa-dollar-sign"></i></span></li>
+                      <li id="tDoLbtn">Todo List <span class="SpanIcon"><i class="fas fa-clipboard-list"></i> </span></li>
+                      <li id="MnMbtn">Money Management<span class="SpanIcon"> <i class="fas fa-dollar-sign"></i></span></li>
                       <li>Contact Saver <span class="SpanIcon"><i class="fas fa-id-card-alt"></i></span></li>
                    <li>Account Login Info <span class="SpanIcon"><i class="fas fa-user"></i></span></li>
                  <li>Save Note <span class="SpanIcon"><i class="far fa-sticky-note"></i></span></li>
@@ -39,9 +39,10 @@
 </div>
 <!--Interface TOdo Liste-->
 <div class="placeH">
-<h4></h4>
-<br><!--
-<div class="addTodo">
+    <div id="tDoList" style="width:100%">
+<br>
+
+<div class="addTodo" id="tDoL">
     <div>
     <label for="">TITLE</label>
     <br>
@@ -75,15 +76,15 @@
       
   </div>
 
-</div>-->
+</div></div>
 
-<div class="MoneyM" id="">
+<div class="MoneyM" id="MnyM">
     <div class="money">
         <div class="addBx">
 <div class="addB">
     <label for="">Add A Budget</label><br>
-    <input type="text" class="xInput" placeholder="00$">
-    <button class="xBtn">Add</button>
+    <input type="number" class="xInput" id="b_a_v" placeholder="00$">
+    <button class="xBtn" id="b_Add">Add</button>
 </div>
 </div>
 <div class="C"></div>
@@ -92,11 +93,11 @@
 
 <div class="addEx">
     <label for="">Your Expence Title</label><br>
-    <input type="text" class="xxInput" placeholder="I Have Baught A Car"><br>
+    <input type="text" class="xxInput" id="exp_T" placeholder="I Have Baught A Car"><br>
 
     <label for="">Expence Amount</label><br>
-    <input type="text" class="xxInput" placeholder="00$" style="margin-bottom:6px"><br>
-    <button class="xBtn">Add</button>
+    <input type="text" class="xxInput" placeholder="00$" id="exp_A" style="margin-bottom:6px"><br>
+    <button class="xBtn" id="ad_b">Add</button>
 
 </div>
 <div class="line"><div class="circle"></div></div>
@@ -108,7 +109,7 @@
        <h3> Budget</h3>
        <i class="fas fa-wallet"></i>
        <div class="" id="">
-           <p class="" id="">1000$</p>
+           <p class="" id="budget_Screen"> 00 </p>
        </div>
     </div>
     
@@ -116,7 +117,7 @@
         <h3>Expences</h3>
         <i class="fas fa-share-square"></i>
         <d class="" id="">
-            <p class="" id="">210$</p>
+            <p class="" id="expense_Screen">00$</p>
         </div>
      
     
@@ -124,7 +125,7 @@
         <h3>Balance</h3>
         <i class="fas fa-hand-holding-usd"></i>
         <div class="" id="">
-            <p class="" id="">790$</p>
+            <p class="" id="balance_Screen">00$</p>
         </div>
      </div>
 </div>
@@ -170,6 +171,7 @@
             </ul>
         </div>
     </div>
+    <br><br>
 </div>
 </div>
 

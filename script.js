@@ -312,3 +312,71 @@ delete1.addEventListener("click", function(){
 
 
 //Fin de Todo List
+//Manage App
+var tDoL_Btn = document.getElementById("tDoLbtn");
+var MnM_Btn =document.getElementById("MnMbtn");
+
+
+tDoL_Btn.addEventListener("click", function(){
+    document.getElementById("tDoList").style.display = "inline-block";
+    document.getElementById("MnyM").style.display = "none";
+  
+
+})
+
+MnM_Btn.addEventListener("click", function(){
+    document.getElementById("tDoList").style.display = "none";
+    document.getElementById("MnyM").style.display = "block";
+    document.getElementById("MnyM").style.marginTop = "10px";
+
+})
+
+
+var budget_Add_Value = document.getElementById("b_a_v");
+var budget_add = document.getElementById("b_Add");
+
+var Expense = document.getElementById("exp_A");
+var Expense_T = document.getElementById("exp_T");
+var Expense_Add = document.getElementById("ad_b")
+
+var budget_Screen = document.getElementById("budget_Screen");
+var expense_Screen = document.getElementById("expense_Screen");
+var balance_Screen = document.getElementById("balance_Screen");
+
+//add a budget
+budget_add.addEventListener("click", function(){
+   
+    var x1 = budget_Screen.textContent;
+    var x2 = parseInt(x1);  
+  var x3 = parseInt(budget_Add_Value.value);
+    budget_Screen.innerHTML =  x2 + x3;
+    var x4 = parseInt(balance_Screen.textContent)
+    balance_Screen.innerHTML =   x4 + x3;
+    budget_Add_Value.value = "";
+
+
+})
+// Substract Money
+Expense_Add.addEventListener("click", function(){
+    var y1 = expense_Screen.textContent;
+    var y2 = parseInt(y1);  //expense final 
+  var y3 = parseInt(Expense.value);//input value
+  var y4 = parseInt(balance_Screen.textContent);
+  let yT = y3 + y2;
+  if( y4<y3 ){
+      alert("No Found")
+    }else{
+    expense_Screen.innerHTML =  y2 + y3;
+    
+    balance_Screen.innerHTML =   y4 - y3;
+   Expense_Add.value = "";
+  }
+
+})
+
+
+
+
+
+
+

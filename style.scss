@@ -328,12 +328,13 @@ background-color: rgb(233, 233, 233);
     justify-content: space-between;
     ul{
         list-style: none;
+        border-bottom:4px solid black;
         li{
             margin:3px;
             padding:5px;
             background-color:rgb(240, 248, 255);
             border-top:1px solid black;
-            height:30px;
+            height:20px;
         }
     }
    
