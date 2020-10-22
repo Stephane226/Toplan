@@ -97,7 +97,12 @@ background-size:cover;
  
 
 }
-
+.todolist0{
+    display: none;
+}
+.MoneyM{
+    display: none;
+}
 .placeH{
     margin:5px;
     width:90%;
@@ -312,9 +317,9 @@ background-color: rgb(233, 233, 233);
     border-right:11px solid $BG;
 }
 .status .fas{
- font-size:70px;
+ font-size:50px;
  margin-left:10px;
- color: $ThemeColor;
+ color: orange;
 }
 .status p{
     font-size:20px;

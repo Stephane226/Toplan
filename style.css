@@ -83,6 +83,14 @@
   padding-top: 7px;
 }
 
+.todolist0 {
+  display: none;
+}
+
+.MoneyM {
+  display: none;
+}
+
 .placeH {
   margin: 5px;
   width: 90%;
@@ -315,9 +323,9 @@
 }
 
 .status .fas {
-  font-size: 70px;
+  font-size: 50px;
   margin-left: 10px;
-  color: #183153;
+  color: orange;
 }
 
 .status p {

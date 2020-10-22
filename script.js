@@ -352,6 +352,7 @@ budget_add.addEventListener("click", function(){
     budget_Screen.innerHTML =  x2 + x3;
     var x4 = parseInt(balance_Screen.textContent)
     balance_Screen.innerHTML =   x4 + x3;
+
     budget_Add_Value.value = "";
 
 
@@ -362,6 +363,7 @@ Expense_Add.addEventListener("click", function(){
     var y2 = parseInt(y1);  //expense final 
   var y3 = parseInt(Expense.value);//input value
   var y4 = parseInt(balance_Screen.textContent);
+ 
   let yT = y3 + y2;
   if( y4<y3 ){
       alert("No Found")
@@ -370,6 +372,13 @@ Expense_Add.addEventListener("click", function(){
     
     balance_Screen.innerHTML =   y4 - y3;
    Expense_Add.value = "";
+
+   alert(Expense_T.value);
+   var My_li = document.createElement("li");
+   var Exp_Ul = document.getElementById("Exp");
+   My_li.appendChild(Expense_T.value);
+   Exp_Ul.appendChild(My_li);
+   alert(My_li)
   }
 
 })
