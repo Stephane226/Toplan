@@ -3,6 +3,9 @@
     margin:0;
 
 }
+body{
+ 
+}
 //#183153;
 //STOCKAGE DES VARIABLES
 $ThemeColor:#177485;
@@ -441,13 +444,16 @@ background-color: rgb(233, 233, 233);
             //padding: 10px;
             box-shadow: 5px 10px 8px 10px #a1a1a1;
             border-radius:24px;
-            margin-top:20px;
+            margin-top:7px;
             }
-            .far, .fas{
+            .fas{
                 font-size:26px;
-                color:green;
+                color:$ThemeColor;
             }
-        }
+            .far{
+                font-size:26px;
+                color:red;
+        }}
 
         .bar1, .bar2{
             width:50%;

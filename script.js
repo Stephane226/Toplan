@@ -420,6 +420,7 @@ var telefon = document.getElementById("telefon");
 var mailadres = document.getElementById("mailadres");
 var website = document.getElementById("website");
 var addContact = document.getElementById("btnAddN");
+var r = 1;
 
 let Myclass = class {
     constructor(name, numero, mail, siteweb){
@@ -430,14 +431,36 @@ let Myclass = class {
 
     }
     addValues(){
-        document.getElementById("theName").innerHTML = this.name;
-        document.getElementById("theNumber").innerHTML = this.numero;
-        document.getElementById("theMail").innerHTML = this.mail;
-        document.getElementById("theWeb").innerHTML = this.siteweb;
+        document.getElementById("theName"+r).innerHTML = this.name;
+        document.getElementById("theNumber"+r).innerHTML = this.numero;
+        document.getElementById("theMail"+r).innerHTML = this.mail;
+        document.getElementById("theWeb"+r).innerHTML = this.siteweb;
     }
     }
 
     btnAddN.addEventListener("click", function(){
+  r+=1;
+        var cntnt =`
+           
+<div class="bar">
+<div class="bar1">
+    <i class="fas fa-user"></i>
+    <span class="" id="theName${r}">Masaaki</span>
+    <span class="" id="theNumber${r}">+90 329 322 33 22</span>
+</div>
+
+<div class="bar2">
+    <span class="" id="theMail${r}">elmasaakiano@gmail.com</span>
+    <span class="" id="theWeb${r}">www.masaaki.com</span>
+    <i class="far fa-trash-alt"></i>
+</div>
+</div>
+
+        `
+       let oneLine =  document.getElementById("ulContact");
+      
+     
+       oneLine.innerHTML +=cntnt;
         let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value)
         addNow.addValues();
     })
