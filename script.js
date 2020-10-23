@@ -320,6 +320,7 @@ var MnM_Btn =document.getElementById("MnMbtn");
 tDoL_Btn.addEventListener("click", function(){
     document.getElementById("tDoList").style.display = "inline-block";
     document.getElementById("MnyM").style.display = "none";
+    document.getElementById("cnt").style.display = "none";
   
 
 })
@@ -405,7 +406,14 @@ span.innerHTML = y3;
 
 })
 
-
+// Partie De Contact
+var openContact = document.getElementById("Opencontact");
+openContact.addEventListener("click",function(){
+    
+    document.getElementById("cnt").style.display = "block";
+    document.getElementById("tDoList").style.display = "none";
+    document.getElementById("MnyM").style.display = "none";
+});
 
 
 

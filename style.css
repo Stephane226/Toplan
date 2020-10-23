@@ -386,4 +386,98 @@
 .historique > div {
   width: 49%;
 }
+
+.contact {
+  display: none;
+}
+
+.contact .addC {
+  font-size: 40px;
+  color: green;
+  margin: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact .contactFill {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact .contactFill .divF {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .contactFill input {
+  width: 100px;
+  height: 25px;
+  outline-style: none;
+}
+
+.contact .contactFill label {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: #177485;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 350px;
+}
+
+.contact .contactSide {
+  background-color: white;
+  width: 100%;
+  height: 400px;
+}
+
+.contact .contactSide .ulContact {
+  margin-top: 10px;
+}
+
+.contact .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  font-size: 18px;
+  background-color: #e7ffef;
+  border: 1px solid;
+  -webkit-box-shadow: 5px 10px 8px 10px #888888;
+          box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.contact .far, .contact .fas {
+  font-size: 26px;
+  color: green;
+}
+
+.bar1, .bar2 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
 /*# sourceMappingURL=style.css.map */
