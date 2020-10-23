@@ -491,4 +491,29 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
+.blockNote .addC {
+  font-size: 36px;
+  cursor: pointer;
+  color: #177485;
+  text-align: center;
+}
+
+.blockNote button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: #177485;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.blockNote input {
+  width: 400px;
+  height: 200px;
+  outline-style: none;
+}
 /*# sourceMappingURL=style.css.map */

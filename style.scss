@@ -453,11 +453,41 @@ background-color: rgb(233, 233, 233);
             .far{
                 font-size:26px;
                 color:red;
-        }}
+        }
+    }
 
         .bar1, .bar2{
             width:50%;
             display:flex;
         justify-content: space-around;
         }
+
+
+ .blockNote{
+    .addC{
+        font-size:36px;
+        cursor:pointer;        
+        color:$ThemeColor;
+        text-align:center;
+    }
+    button{
+
+        width:180px;
+        height:40px;
+        border:none;
+        background-color:$ThemeColor;
+        color:white;
+        cursor:pointer;
+        margin-top:10px;
+   border-radius: 20px;;
+    
+        margin-bottom:20px;
+    }
+    input{
+        width:400px;
+        height:200px;
+        outline-style: none;
+    }
+    
+ }
       
