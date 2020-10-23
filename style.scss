@@ -470,23 +470,11 @@ background-color: rgb(233, 233, 233);
         color:$ThemeColor;
         text-align:center;
     }
-    button{
-
-        width:180px;
-        height:40px;
-        border:none;
-        background-color:$ThemeColor;
-        color:white;
-        cursor:pointer;
-        margin-top:10px;
-   border-radius: 20px;;
-    
-        margin-bottom:20px;
-    }
     input{
         width:400px;
         height:200px;
         outline-style: none;
+      
     }
     .notes{
         display:flex;
@@ -503,17 +491,94 @@ background-color: rgb(233, 233, 233);
         justify-content: space-around;
     }
     .quote{
-        width:150px;
+        width:220px;
         height:150px;
-        background-color:$ThemeColor;
+        background-color:rgb(68, 42, 8);
         margin-top:10px;
+        p{
+            margin:10px;
+            color:white;
+            width:80%;
+            height:15px;
+
+
+        }
 
     }
+    .NotesArea{
+        width:100%;
+        height:300px;
+        overflow-y: scroll ;
+    }
+
+   
    
     
  }
- .NotesArea{
-    width:100%;
-    height:300px;
-    overflow-y: scroll ;
+ .divFF{
+    display: flex;
+    justify-content: space-between;
+    .quoteScreen{
+        width:400px;
+        height:180px;
+        background-color:white;
+        overflow-y: scroll;
+        border-bottom:8px gray solid;
+        border-top:8px gray solid;
+        padding:10px;
+       box-shadow:5px 10px 8px 10px #a1a1a1;
+
+    }
+
+    button{
+
+        width:180px;
+        height:40px;
+        border:none;
+        background-color:$ThemeColor;
+        color:white;
+        cursor:pointer;
+        margin-top:10px;
+   border-radius: 20px;;
+    
+        margin-bottom:20px;
+    }
+  
+}
+.veiw{
+
+        width:70px;
+        height:20px;
+        border:none;
+        background-color:orange;
+        color:white;
+        cursor:pointer;
+        margin-top:10px;
+   border-radius: 20px;;
+    
+        margin-bottom:20px;
+        margin-bottom:7px;
+        display: block;
+      
+    
+} 
+.rmv{
+
+
+        width:70px;
+        height:20px;
+        border:none;
+        background-color:red;
+        color:white;
+        cursor:pointer;
+        margin-top:10px;
+   border-radius: 20px;;
+  
+        margin-bottom:20px;
+    
+}
+.btns{
+    width:35%;
+    
+margin:0 auto;
 }
