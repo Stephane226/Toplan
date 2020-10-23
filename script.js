@@ -317,6 +317,7 @@ var MnM_Btn =document.getElementById("MnMbtn");
 
 tDoL_Btn.addEventListener("click", function(){
     document.getElementById("tDoList").style.display = "inline-block";
+    document.getElementById("blockNt").style.display = "none";
     document.getElementById("MnyM").style.display = "none";
     document.getElementById("cnt").style.display = "none";
   
@@ -328,6 +329,7 @@ MnM_Btn.addEventListener("click", function(){
     document.getElementById("MnyM").style.display = "block";
     document.getElementById("MnyM").style.marginTop = "10px";
     document.getElementById("cnt").style.display = "none";
+    document.getElementById("blockNt").style.display = "none";
 
 })
 
@@ -412,6 +414,7 @@ openContact.addEventListener("click",function(){
     document.getElementById("cnt").style.display = "block";
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "none";
+    document.getElementById("blockNt").style.display = "none";
 });
 
 //Partie contact form 
@@ -466,3 +469,12 @@ let Myclass = class {
     })
 
 
+//partie Blocknote
+var openNotes = document.getElementById("notesave");
+openNotes.addEventListener("click",function(){
+    
+    document.getElementById("cnt").style.display = "none";
+    document.getElementById("tDoList").style.display = "none";
+    document.getElementById("MnyM").style.display = "none";
+    document.getElementById("blockNt").style.display = "block";
+});

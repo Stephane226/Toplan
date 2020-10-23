@@ -22,7 +22,7 @@
                       <li id="MnMbtn">Money Management<span class="SpanIcon"> <i class="fas fa-dollar-sign"></i></span></li>
                       <li id="Opencontact">Contact Saver <span class="SpanIcon"><i class="fas fa-id-card-alt"></i></span></li>
                    <li>Account Login Info <span class="SpanIcon"><i class="fas fa-user"></i></span></li>
-                 <li>Save Note <span class="SpanIcon"><i class="far fa-sticky-note"></i></span></li>
+                 <li ID="notesave">Save Note <span class="SpanIcon"><i class="far fa-sticky-note"></i></span></li>
                  <li>Parameters <span class="SpanIcon"><i class="far fa-cog"></i></span></li>            
                 </ul>
               </div>
@@ -250,7 +250,7 @@
 
 </div>
 <!--debut de blocknOTE-->
-<div class="blockNote">
+<div class="blockNote" id="blockNt">
    
 
             <div class="addC">
@@ -260,7 +260,16 @@
             <div class="contactFill">
                 <div class="divFF">
                    <div> 
-                    <input type="text" id="isim"><br>
+
+    <textarea id="story" name="story" style="outline-style: none; border-top:10px 
+    solid rgb(128, 128, 128);border-bottom:10px 
+    solid gray;"
+rows="13" cols="50">
+
+</textarea>
+                    <!--<input type="text" id="isim">--><br>
+                    <input type="text" placeholder="ENTER A TITLE" style="width:180px;height:37px;outline-style: none;
+                    border-radius:30px;border:1px #177485 solid;margin-left:10px " >
                     <button>Save Note</button>
                 </div>
 
