@@ -414,7 +414,32 @@ openContact.addEventListener("click",function(){
     document.getElementById("MnyM").style.display = "none";
 });
 
+//Partie contact form 
+var isim = document.getElementById("isim");
+var telefon = document.getElementById("telefon");
+var mailadres = document.getElementById("mailadres");
+var website = document.getElementById("website");
+var addContact = document.getElementById("btnAddN");
 
+let Myclass = class {
+    constructor(name, numero, mail, siteweb){
+        this.name = name;
+        this.numero = numero;
+        this.mail = mail;
+        this.siteweb = siteweb
 
+    }
+    addValues(){
+        document.getElementById("theName").innerHTML = this.name;
+        document.getElementById("theNumber").innerHTML = this.numero;
+        document.getElementById("theMail").innerHTML = this.mail;
+        document.getElementById("theWeb").innerHTML = this.siteweb;
+    }
+    }
+
+    btnAddN.addEventListener("click", function(){
+        let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value)
+        addNow.addValues();
+    })
 
 
