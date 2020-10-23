@@ -15,8 +15,6 @@ var ul = document.createElement("ul");
 function AddTodo(){
     if(TodoTitle.value == '' || TodoDate.value == ""){
     alert("Please Fill The Information")
-    }else if(TodoDate.value.indexOf('/') !=-1){
-        alert("Please Enter A Valid Date")
     }
     else{
 
@@ -329,6 +327,7 @@ MnM_Btn.addEventListener("click", function(){
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "block";
     document.getElementById("MnyM").style.marginTop = "10px";
+    document.getElementById("cnt").style.display = "none";
 
 })
 
