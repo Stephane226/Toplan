@@ -261,27 +261,27 @@
                 <div class="divFF">
                    <div> 
 
-    <textarea id="story" name="story" style="outline-style: none; border-top:10px 
+    <textarea id="writeNote" name="story" style="outline-style: none; border-top:10px 
     solid rgb(128, 128, 128);border-bottom:10px 
     solid gray;"
 rows="13" cols="50">
 
 </textarea>
                     <!--<input type="text" id="isim">--><br>
-                    <input type="text" placeholder="ENTER A TITLE" style="width:180px;height:37px;outline-style: none;
+                    <input type="text" id="ntlt" placeholder="ENTER A TITLE" style="width:180px;height:37px;outline-style: none;
                     border-radius:30px;border:1px #177485 solid;margin-left:10px " >
-                    <button>Save Note</button>
+                    <button id="sNote">Save Note</button>
                 </div>
 
                 <div class="quoteScreen">
-                    <p>
+                    <p id="noteVeiw">
                         Marc Aurèle naît sous le règne d'Hadrien et est le fils du préteur Marcus Annius Verus et de l'héritière Domitia Lucilla Minor. Son père meurt alors qu'il est encore enfant et Marc Aurèle est élevé par sa mère et ses grands-pères. Après la mort du fils adoptif d'Hadrien, Lucius Aelius, en 138, l'empereur adopte l'oncle de Marc Aurèle, Antonin le Pieux, comme nouvel héritier. À son tour, Antonin adopte Marc Aurèle et Lucius Aurelius Verus, le fils d'Aelius. Hadrien meurt cette année-là et Antonin devient empereur. Alors héritier du trône, Marc Aurèle étudie le grec et le latin sous la direction de tuteurs tels qu'Hérode Atticus et Fronton. Il entretient par la suite une correspondance étroite avec Fronton pendant de nombreuses années. Marc 
                     </p>
                 </div>
         </div>
         <div class="NotesArea" id="">
         <div class="notes" id="">
-            <div class="notesM" id="">
+            <div class="notesM" id="notesQuoiteArea">
                 <div class="quote" id="">
                     <div class="btns">
                        <button class="veiw" id="">Vew</button>
@@ -293,14 +293,24 @@ rows="13" cols="50">
                 </div>
                 <div class="quote" id="">
                     <div class="btns">
-                        <button class="veiw" id="">Vew</button>
-                        <button id="clean" class="rmv">Remove</button>
-                     </div>
-                 <p class="" id="">
-                     Note du chef pour batir...
-                 </p>
+                       <button class="veiw" id="">Vew</button>
+                       <button id="clean" class="rmv">Remove</button>
+                    </div>
+                <p class="" id="">
+                    Note du chef pour batir...
+                </p>
                 </div>
-            </div>
+                <div class="quote" id="">
+                    <div class="btns">
+                       <button class="veiw" id="">Vew</button>
+                       <button id="clean" class="rmv">Remove</button>
+                    </div>
+                <p class="" id="">
+                    Note du chef pour batir...
+                </p>
+                </div>
+                
+            </div><!--
             <div class="notesM1" id="">
                 <div class="quote" id="">
                     <div class="btns">
@@ -320,10 +330,12 @@ rows="13" cols="50">
                      Note du chef pour batir...
                  </p>
                 </div>
-            </div>
+            </div>-->
+
+
         </div>
 
-        <div class="notes" id="">
+       <!--<div class="notes" id="">
             <div class="notesM" id="">
                 <div class="quote" id="">
                     <div class="btns">
@@ -366,6 +378,12 @@ rows="13" cols="50">
             </div>
         </div>
 
+
+
+
+
+
+
         <div class="notes" id="">
             <div class="notesM" id="">
                 <div class="quote" id="">
@@ -407,7 +425,7 @@ rows="13" cols="50">
                  </p>
                 </div>
             </div>
-        </div>
+        </div>--> 
     </div>
     </div>
 
@@ -434,7 +452,7 @@ rows="13" cols="50">
    
       </div>
   </section>
-    
+   
 
     <script src="script.js"></script>
 </body>

@@ -456,6 +456,8 @@ let Myclass = class {
     <span class="" id="theMail${r}">elmasaakiano@gmail.com</span>
     <span class="" id="theWeb${r}">www.masaaki.com</span>
     <i class="far fa-trash-alt"></i>
+    
+
 </div>
 </div>
 
@@ -477,4 +479,38 @@ openNotes.addEventListener("click",function(){
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "none";
     document.getElementById("blockNt").style.display = "block";
+});
+
+var addNote = document.getElementById("sNote");
+var noteTitle = document.getElementById("ntlt");
+var quoteV = document.getElementById("writeNote");
+var veiwQuote = document.getElementById("noteVeiw");
+var l = 1;
+
+addNote.addEventListener("click",function(){
+
+
+var domQuote = `
+                      
+<div class="quote" id="">
+<div class="btns">
+   <button class="veiw" id="">Vew</button>
+   <button id="clean" class="rmv">Remove</button>
+</div>
+<p class="" id="lEtITRE${l}">
+Note du chef pour batir...
+</p>
+<p class="laNote fl" id="laQuote${l}">s</p>
+</div>
+
+`
+
+
+    document.getElementById("notesQuoiteArea").innerHTML +=domQuote;
+
+    document.getElementById("lEtITRE"+l).innerHTML = noteTitle.value
+    document.getElementById("laQuote"+l).innerHTML = quoteV.value;
+    l+=1;
+    quoteV.value = "";
+    noteTitle.value = "";
 });

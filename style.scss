@@ -478,23 +478,22 @@ background-color: rgb(233, 233, 233);
     }
     .notes{
         display:flex;
-        justify-content:space-around;
+ 
     }
     .notesM{
         display:flex;
         width:100%;
-        justify-content: space-around;
+        flex-wrap: wrap;
     }
     .notesM1{
         display:flex;
         width:100%;
-        justify-content: space-around;
     }
     .quote{
         width:220px;
         height:150px;
         background-color:rgb(68, 42, 8);
-        margin-top:10px;
+        margin:5px;
         p{
             margin:10px;
             color:white;
@@ -583,4 +582,10 @@ background-color: rgb(233, 233, 233);
     width:35%;
     
 margin:0 auto;
+}
+.fl{
+    display: none;
+}
+.blockNote{
+    display:none;
 }
