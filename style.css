@@ -72,6 +72,8 @@
   background-color: white;
   margin: 10px;
   margin-top: 0px;
+  /*background-image: url('img/bg.jpg');
+    background-size: cover;*/
 }
 
 .title {
@@ -81,6 +83,12 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .todolist0 {
@@ -137,7 +145,7 @@
 }
 
 .oneTdL {
-  width: 90%;
+  width: 100%;
   height: 50px;
   background-color: #eaf3ea;
   margin: 5px;
@@ -150,6 +158,7 @@
   height: 500px;
   width: 100%;
   overflow-y: scroll;
+  background-color: white;
 }
 
 #s1 {
@@ -618,5 +627,55 @@
 
 .blockNote {
   display: none;
+}
+
+.asscl {
+  -webkit-box-shadow: 2px 3px 8px 10px #a1a1a1;
+          box-shadow: 2px 3px 8px 10px #a1a1a1;
+  background-color: "#faf8f8";
+}
+
+.alertP {
+  width: auto;
+  height: 40px;
+  margin-top: -7px;
+  background-color: #880a0a;
+  font-size: 14px;
+  float: right;
+  color: white;
+  padding-right: 10px;
+  padding-left: 6px;
+  display: none;
+  -webkit-box-shadow: 2px 1px 1px 1px #880a0a;
+          box-shadow: 2px 1px 1px 1px #880a0a;
+  padding-top: 7px;
+}
+
+.alertP .fas {
+  font-size: 24px;
+  color: yellow;
+}
+
+.fadeIn {
+  -webkit-animation: fadeIn 2s;
+          animation: fadeIn 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
