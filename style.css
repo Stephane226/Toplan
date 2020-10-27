@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  overflow: hidden;
+}
+
 .fullSize {
   width: 100%;
   background-color: #f0f0f5;

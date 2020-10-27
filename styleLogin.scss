@@ -8,6 +8,7 @@ $FULL:100%;
     padding:0;
 }
 body{
+ overflow: hidden;
     background-image:url('img/bg.jpg')
 }
 .endi{
@@ -21,6 +22,9 @@ body{
     width: 30%;
     background-color:rgba(253, 253, 253, 0.3);
     height:720px;
+    border-top-right-radius:50px;
+    border-bottom-right-radius:50px;
+
    padding-top:50px;
 
 }
@@ -38,6 +42,7 @@ body{
         margin-bottom:30px;
         margin-top:10px;
        border-style: none;
+       background-color:rgba(95, 243, 95,0.2);
 
     }
     label{
@@ -61,3 +66,23 @@ body{
     }
 }
 
+
+.fadeIn{
+    animation: fadeIn 6s;
+  }
+
+  @keyframes fadeIn{
+      from{
+         opacity: 0;
+         margin-right:-2400px  
+      }
+      to{
+             opacity: 1;
+             
+      }
+  }
+
+  .regis{
+      width:100%;
+      height:100px;
+  }
