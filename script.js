@@ -331,10 +331,9 @@ tDoL_Btn.addEventListener("click", function(){
       document.getElementById("MnyM").style.display = "none";
       document.getElementById("blockNt").style.display = "none";
       document.getElementById("cnt").style.display = "none";
-    document.getElementById("tDoList").style.display = "inline-block";
-    document.getElementById("tDolist").classList.add("fadeIn");
+    document.getElementById("tDoList").style.display = "block";
+    document.getElementById("tDoList").classList.add("fadeIn");
    
-  alert(";lhjghf")
 
 })
 

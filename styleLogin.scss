@@ -1,0 +1,63 @@
+//STOCKAGE DES VARIABLES
+$ThemeColor:#177485;
+$BG:rgb(240, 240, 245);
+$FULL:100%;
+
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-image:url('img/bg.jpg')
+}
+.endi{
+    width:$FULL;
+    height:50px;
+    background-color:$ThemeColor;
+   
+   
+}
+.log-part{
+    width: 30%;
+    background-color:rgba(253, 253, 253, 0.3);
+    height:720px;
+   padding-top:50px;
+
+}
+.login{
+   
+    width: 50%;
+    height:300px;
+    margin:0 auto;
+    margin-left:50px;
+    input{
+        width:230px;
+        height:30px;
+        border-radius: 30px;
+        outline-style: none;
+        margin-bottom:30px;
+        margin-top:10px;
+       border-style: none;
+
+    }
+    label{
+        font-size:17px;
+        font-weight:600;
+        color:white
+    }
+    button{
+        width:110px;
+        height:30px;
+        border:none;
+        background-color:$ThemeColor;
+        color:white;
+        cursor:pointer;
+        margin-top:-10px;
+        
+   border-radius: 20px;;
+    
+
+
+    }
+}
+
