@@ -19,8 +19,8 @@ body{
    
 }
 .log-part{
-    width: 30%;
-    background-color:rgba(253, 253, 253, 0.3);
+    width: 60%;
+    background-color:rgba(253, 253, 253, 0.4);
     height:720px;
     border-top-right-radius:50px;
     border-bottom-right-radius:50px;
@@ -42,7 +42,7 @@ body{
         margin-bottom:30px;
         margin-top:10px;
        border-style: none;
-       background-color:rgba(95, 243, 95,0.2);
+       background-color:rgba(12, 31, 12, 0.2);
 
     }
     label{
@@ -68,21 +68,61 @@ body{
 
 
 .fadeIn{
-    animation: fadeIn 6s;
+    animation: fadeIn 3s;
   }
 
   @keyframes fadeIn{
       from{
          opacity: 0;
-         margin-right:-2400px  
+         margin-right:400px  
       }
       to{
              opacity: 1;
              
       }
   }
+/*
+.fadeIn2{
+    animation: fadeIn2 3s;
+  }
+@keyframes fadeIn2{
+    from{
+       opacity: 0;
+       margin-left:400px  
+    }
+    to{
+           opacity: 1;
+           
+    }
+}*/
+
+
 
   .regis{
       width:100%;
       height:100px;
   }
+  .sign{
+      width:50%
+  }
+  .sign-part{
+   
+        width: 60%;
+        background-color:rgba(253, 253, 253, 0.6);
+        height:720px;
+        border-top-left-radius:50px;
+        border-bottom-left-radius:50px;
+   margin-left:290px;
+       padding-top:50px;
+    
+    }
+    .logs{
+        width:100%;
+       display:flex;
+       justify-content:space-between;
+    }
+    .log{
+        width:50%;
+    }
+
+  
