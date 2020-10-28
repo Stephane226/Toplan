@@ -320,6 +320,8 @@ else{
 
 }
 
+yazi = "23";
+sayi = Number(yazi)
 
 //Manage App
 var tDoL_Btn = document.getElementById("tDoLbtn");
@@ -371,6 +373,7 @@ budget_add.addEventListener("click", function(){
         var x1 = budget_Screen.textContent;
         var x2 = parseInt(x1);  
         var x3 = parseInt(budget_Add_Value.value);
+        if(x)
         budget_Screen.innerHTML =  x2 + x3;
         var x4 = parseInt(balance_Screen.textContent)
         balance_Screen.innerHTML =   x4 + x3;
