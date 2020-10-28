@@ -68,35 +68,24 @@ body{
 
 
 .fadeIn{
-    animation: fadeIn 3s;
+    animation: fadeIn 2s;
   }
 
   @keyframes fadeIn{
       from{
          opacity: 0;
-         margin-right:400px  
+         margin-left:-400px  
       }
       to{
              opacity: 1;
              
       }
   }
-/*
-.fadeIn2{
-    animation: fadeIn2 3s;
-  }
-@keyframes fadeIn2{
-    from{
-       opacity: 0;
-       margin-left:400px  
-    }
-    to{
-           opacity: 1;
-           
-    }
-}*/
 
 
+.logUp{
+    display:none
+}
 
   .regis{
       width:100%;
@@ -125,4 +114,12 @@ body{
         width:50%;
     }
 
-  
+  .log-part{
+      input{
+          width:160px;
+          font-size:14px;
+      }
+      .login{
+          width:80%
+      }
+  }
