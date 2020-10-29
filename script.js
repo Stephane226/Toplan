@@ -19,12 +19,11 @@ function AddTodo(){
     // Match the date format through regular expression
     if(dateformat.test(TodoDate.value) == true && TodoTitle.value != '')
     {
-    
        
 innerDom.classList.add("asscl");
        
 var TodoContent = `
-<div class="oneTdL">
+<div class="oneTdL fadeIn">
 <div id="s1" class="ds1"><span id="numb">${number}</span></div>
   <div id="s2" class="ds2"><span class="txt"> ${TodoTitle.value}</span><span id="dateH">${TodoDate.value}</span></div>
   <div id="s3" class="ds3 ${"tgt"+number}" ><i class="fas fa-check"></i></div>
@@ -320,8 +319,7 @@ else{
 
 }
 
-yazi = "23";
-sayi = Number(yazi)
+
 
 //Manage App
 var tDoL_Btn = document.getElementById("tDoLbtn");
@@ -373,7 +371,7 @@ budget_add.addEventListener("click", function(){
         var x1 = budget_Screen.textContent;
         var x2 = parseInt(x1);  
         var x3 = parseInt(budget_Add_Value.value);
-        if(x)
+    
         budget_Screen.innerHTML =  x2 + x3;
         var x4 = parseInt(balance_Screen.textContent)
         balance_Screen.innerHTML =   x4 + x3;

@@ -5,10 +5,20 @@
 }
 body{
     overflow: hidden;
+    input{
+        border-radius:10px;
+        outline-style: none;
+        border-style: none;
+        background-color:rgb(231, 255, 251);
+        font-size:13px;
+        border:1px thin black;
+
+    }
 }
 //#183153;
 //STOCKAGE DES VARIABLES
-$ThemeColor:#177485;
+//#177485;
+$ThemeColor:#177485 ;
 $BG:rgb(240, 240, 245);
 $FULL:100%;
 
@@ -52,6 +62,7 @@ $FULL:100%;
     background-color:rgb(207, 207, 207);
     font-size:18px;
     font-weight:500;
+    border-radius: 10px;
     
  }
  .ulElem ul li:hover{
@@ -438,10 +449,12 @@ background-color: rgb(233, 233, 233);
                 display:flex;
                 justify-content: space-around;
                 width:100%;
-                height:50px;
+                height:40px;
                 padding-top:10px;
                 font-size:18px;
-                background-color:rgb(231, 255, 239);
+                background-color:#d9f5faf6;
+                border:1px white solid;
+                color:rgb(10, 9, 9);
 
                   
             border: 1px solid;

@@ -17,7 +17,7 @@ body {
 .log-part {
   width: 60%;
   background-color: rgba(253, 253, 253, 0.4);
-  height: 720px;
+  height: 615px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   padding-top: 50px;
@@ -59,8 +59,8 @@ body {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  -webkit-animation: fadeIn 1s;
+          animation: fadeIn 1s;
 }
 
 @-webkit-keyframes fadeIn {
