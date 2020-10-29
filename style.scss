@@ -509,7 +509,7 @@ background-color: rgb(233, 233, 233);
     .quote{
         width:220px;
         height:150px;
-        background-color:rgb(68, 42, 8);
+        background-color:#083b44;
         margin:5px;
         p{
             margin:10px;
@@ -636,7 +636,7 @@ margin:0 auto;
   @keyframes fadeIn{
       from{
          opacity: 0;
-         margin-right:-100px  
+         margin-left:-100px  
       }
       to{
              opacity: 1;

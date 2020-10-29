@@ -555,7 +555,7 @@ body input {
 .blockNote .quote {
   width: 220px;
   height: 150px;
-  background-color: #442a08;
+  background-color: #083b44;
   margin: 5px;
 }
 
@@ -680,7 +680,7 @@ body input {
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;
-    margin-right: -100px;
+    margin-left: -100px;
   }
   to {
     opacity: 1;
@@ -690,7 +690,7 @@ body input {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    margin-right: -100px;
+    margin-left: -100px;
   }
   to {
     opacity: 1;
