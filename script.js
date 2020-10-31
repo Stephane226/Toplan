@@ -10,46 +10,52 @@ var alertF = document.getElementById("alertpId");
 
 //
         
-
+alert(document.getElementById('ad_b').parentElement.textContent)
 
 function AddTodo(){
     alertF.style.display = "none";
-
     var dateformat = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
     // Match the date format through regular expression
     if(dateformat.test(TodoDate.value) == true && TodoTitle.value != '')
     {
-       
+     
 innerDom.classList.add("asscl");
        
 var TodoContent = `
-<div class="oneTdL fadeIn" id="TDdiv${number}>
-<div id="s1" class="ds1"><span id="numb">${number}</span></div>
-  <div id="s2" class="ds2"><span class="txt"> ${TodoTitle.value}</span><span id="dateH">${TodoDate.value}</span></div>
-  <div id="s3" class="ds3 ${"tgt"+number}" ><i class="fas fa-check"></i></div>
-  <div id="s3a" class="ds3a ${"tgf"+number}"><i class="fas fa-times"></i></div>
-  <div id="s4" class="ds4 ${"sil"+number}" ><i class="fas fa-trash-alt"></i></div>
 
+
+
+<div class="oneTdL" id= "lalIste${number}">
+<div id="" class="s1 ds1"><span id="numb">${number}</span></div>
+
+  <div  class="ds2 s2"><span class="txt"> ${TodoTitle.value}</span><span id="dateH">2 janvier 2019</span></div>
+  <div  id= "doneT${number}" class="ds3 s3 tgt${number}" onclick = "document.getElementById('doneT${number}').style.color = 'green';document.getElementById('nDoneT${number}').style.color = 'black';"> <i class="fas fa-check"></i></div>
+  <div  id= "nDoneT${number}" class="ds3a s3a tgf${number}" onclick = "document.getElementById('doneT${number}').style.color = 'black';document.getElementById('nDoneT${number}').style.color = 'red';">  <i class="fas fa-times"></i></div>
+  <div  class="ds${number} s4" onClick="this.parentElement.remove()"><i class="fas fa-trash-alt"></i></div>
 </div>
+
 `;
+//document.getElementById('lalIste${number}').remove()
+
 innerDom.innerHTML += TodoContent;
+TodoTitle.value = "";
+TodoDate.value = ""
 number +=1;
-
 //Utulisons toogle pour cocher et decocher ;es taches faites ou pas
-
+/*
 //start
 var done1 = document.querySelector(".tgt1");
 done1.addEventListener("click", function(){
-document.querySelector(".tgt1").style.color = "green";
-document.querySelector(".tgf1").style.color = "black"
+this.style.color = "green";
+this.style.color = "black"
 
 
 })
 
 var notDone1 = document.querySelector(".tgf1");
 notDone1.addEventListener("click", function(){
-document.querySelector(".tgf1").style.color = "red";
-document.querySelector(".tgt1").style.color = "black"
+this.style.color = "red";
+this.style.color = "black"
 
 
 })
@@ -298,7 +304,7 @@ delete11.style.backgroundColor = 'black';
 alert(this.parentElement)
 })
 //End
-
+*/
 
 }
 

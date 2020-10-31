@@ -175,7 +175,7 @@ body input {
   background-color: white;
 }
 
-#s1 {
+.s1 {
   width: 7%;
   height: 50px;
   background-color: #177485;
@@ -184,11 +184,11 @@ body input {
   font-weight: 800;
 }
 
-#s1 #numb {
+.s1 #numb {
   margin: 15px;
 }
 
-#s2 {
+.s2 {
   width: 80%;
   font-size: 19px;
   height: 50px;
@@ -196,36 +196,36 @@ body input {
   color: white;
 }
 
-#s3 {
+.s3 {
   width: 7%;
   height: 50px;
   font-size: 19px;
   background-color: #dddbdb;
 }
 
-#s3 .fas {
+.s3 .fas {
   margin: 15px;
 }
 
-#s3a {
+.s3a {
   width: 7%;
   height: 50px;
   font-size: 19px;
   background-color: #e9e9e9;
 }
 
-#s3a .fas {
+.s3a .fas {
   margin: 15px;
 }
 
-#s4 {
+.s4 {
   width: 7%;
   height: 50px;
   font-size: 19px;
   background: #cacaca;
 }
 
-#s4 .fas {
+.s4 .fas {
   margin: 15px;
 }
 
@@ -672,28 +672,31 @@ body input {
   color: yellow;
 }
 
-.fadeIn {
-  -webkit-animation: fadeIn 1s;
-          animation: fadeIn 1s;
-}
+/*
+  .fadeIn{
+    animation: fadeIn 1s;
+  }
 
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    margin-left: -100px;
+  @keyframes fadeIn{
+      from{
+         opacity: 0;
+         margin-left:-100px  
+      }
+      to{
+             opacity: 1;
+             
+      }
   }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    margin-left: -100px;
-  }
-  to {
-    opacity: 1;
-  }
+  //debut de login page 
+
+
+
+  
+  //fin de login page
+*/
+.remove {
+  font-size: 50px;
+  color: yellow;
 }
 /*# sourceMappingURL=style.css.map */
