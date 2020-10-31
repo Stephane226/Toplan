@@ -23,12 +23,12 @@ function AddTodo(){
 innerDom.classList.add("asscl");
        
 var TodoContent = `
-<div class="oneTdL fadeIn">
+<div class="oneTdL fadeIn" id="TDdiv${number}>
 <div id="s1" class="ds1"><span id="numb">${number}</span></div>
   <div id="s2" class="ds2"><span class="txt"> ${TodoTitle.value}</span><span id="dateH">${TodoDate.value}</span></div>
   <div id="s3" class="ds3 ${"tgt"+number}" ><i class="fas fa-check"></i></div>
   <div id="s3a" class="ds3a ${"tgf"+number}"><i class="fas fa-times"></i></div>
-  <div id="s4" class="ds4 ${"sil"+number}"><i class="fas fa-trash-alt"></i></div>
+  <div id="s4" class="ds4 ${"sil"+number}" ><i class="fas fa-trash-alt"></i></div>
 
 </div>
 `;
