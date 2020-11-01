@@ -228,19 +228,16 @@ let Myclass = class {
     }
     }
 var linkSite = document.getElementById("theWeb").value;
-var regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
-
     btnAddN.addEventListener("click", function(){
-        if(isim.value == '' || telefon.value == "" || mailadres.value == "" ||website.value == ""){
-           if(regexp.test(website.value) == true){
-            alertF.style.display = "block";
-            alert("wb no")
-           }
+        if(isim.value == '' || telefon.value == "" || mailadres.value == "" ||website.value == "" || 
+        website.value.indexOf(".")== -1 || website.value.indexOf("www")== -1 || mailadres.value.indexOf("@")== -1 || 
+         mailadres.value.indexOf(".")== -1 ){
+          
         
             alertF.style.display = "block";
         }else{
 
-        
+          
         alertF.style.display = "none";
         r+=1;
       
@@ -254,8 +251,8 @@ var regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:1
 </div>
 
 <div class="bar2">
-    <span class="" id="theMail${r}">elmasaakiano@gmail.com</span>
-    <span class="" id="theWeb${r}"> www.masaaki.com</span>
+    <span class="" id="theMail${r}" href='mailto=:${mailadres.value}'>elmasaakiano@gmail.com</span>
+   <span  id="theWeb${r}" onClick="window.open('${website.value}')"> www.masaaki.com</span>
     
   <span  style="color:rgb(154, 31, 150);" onClick="this.parentElement.parentElement.remove()"> <i class="far fa-trash-alt"></i></span>
     
@@ -272,7 +269,7 @@ var regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:1
        document.getElementById("ulContact").classList.add("fadeIn")
         let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value)
         addNow.addValues();
-    }})
+         }})
   function  modify(){
       this.parentElement.children[0].textContent
   }

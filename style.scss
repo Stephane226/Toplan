@@ -86,7 +86,9 @@ $FULL:100%;
 background-image:url('img/moon.jpg');
 background-size:cover;
 }
-
+.theTitle{
+    margin-left:14px;
+}
 .SpanIcon{
     
     float:right;
@@ -101,6 +103,7 @@ background-size:cover;
     background-color:rgb(255, 255, 255);
     margin:10px;
     margin-top:0px;
+    margin-left:-3px;
     /*background-image: url('img/bg.jpg');
     background-size: cover;*/
 }
@@ -632,7 +635,7 @@ margin:0 auto;
           font-size:24px;
           color:yellow
       }
-  }/*
+  }
   .fadeIn{
     animation: fadeIn 1s;
   }
@@ -654,7 +657,7 @@ margin:0 auto;
 
   
   //fin de login page
-*/
+
 .remove{
     font-size:50px;
     color:yellow;
