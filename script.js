@@ -9,8 +9,7 @@ var ul = document.createElement("ul");
 var alertF = document.getElementById("alertpId");
 
 //
-        
-alert(document.getElementById('ad_b').parentElement.textContent)
+    
 
 function AddTodo(){
     alertF.style.display = "none";
@@ -40,282 +39,7 @@ var TodoContent = `
 innerDom.innerHTML += TodoContent;
 TodoTitle.value = "";
 TodoDate.value = ""
-number +=1;
-//Utulisons toogle pour cocher et decocher ;es taches faites ou pas
-/*
-//start
-var done1 = document.querySelector(".tgt1");
-done1.addEventListener("click", function(){
-this.style.color = "green";
-this.style.color = "black"
-
-
-})
-
-var notDone1 = document.querySelector(".tgf1");
-notDone1.addEventListener("click", function(){
-this.style.color = "red";
-this.style.color = "black"
-
-
-})
-//End
-//start
-var done2 = document.querySelector(".tgt2");
-done2.addEventListener("click", function(){
-document.querySelector(".tgt2").style.color = "green";
-document.querySelector(".tgf2").style.color = "black"
-
-
-})
-
-var notDone2 = document.querySelector(".tgf2");
-notDone2.addEventListener("click", function(){
-document.querySelector(".tgf2").style.color = "red";
-document.querySelector(".tgt2").style.color = "black"
-
-
-})
-//End
-//start
-var done3 = document.querySelector(".tgt3");
-done3.addEventListener("click", function(){
-document.querySelector(".tgt3").style.color = "green";
-document.querySelector(".tgf3").style.color = "black"
-
-
-})
-
-var notDone3 = document.querySelector(".tgf3");
-notDone3.addEventListener("click", function(){
-document.querySelector(".tgf3").style.color = "red";
-document.querySelector(".tgt3").style.color = "black"
-
-
-})
-//End
-//start
-var done4 = document.querySelector(".tgt4");
-done4.addEventListener("click", function(){
-document.querySelector(".tgt4").style.color = "green";
-document.querySelector(".tgf4").style.color = "black"
-
-
-})
-
-var notDone4 = document.querySelector(".tgf4");
-notDone4.addEventListener("click", function(){
-document.querySelector(".tgf4").style.color = "red";
-document.querySelector(".tgt4").style.color = "black"
-
-
-})
-//End
-//start
-var done5 = document.querySelector(".tgt5");
-done5.addEventListener("click", function(){
-document.querySelector(".tgt5").style.color = "green";
-document.querySelector(".tgf5").style.color = "black"
-
-
-})
-
-var notDone5 = document.querySelector(".tgf5");
-notDone5.addEventListener("click", function(){
-document.querySelector(".tgf5").style.color = "red";
-document.querySelector(".tgt5").style.color = "black"
-
-
-})
-//End
-//start
-var done6 = document.querySelector(".tgt6");
-done6.addEventListener("click", function(){
-document.querySelector(".tgt6").style.color = "green";
-document.querySelector(".tgf6").style.color = "black"
-
-
-})
-
-var notDone6 = document.querySelector(".tgf6");
-notDone6.addEventListener("click", function(){
-document.querySelector(".tgf6").style.color = "red";
-document.querySelector(".tgt6").style.color = "black"
-
-
-})
-//End
-//start
-var done7 = document.querySelector(".tgt7");
-done7.addEventListener("click", function(){
-document.querySelector(".tgt7").style.color = "green";
-document.querySelector(".tgf7").style.color = "black"
-
-
-})
-
-var notDone7 = document.querySelector(".tgf7");
-notDone7.addEventListener("click", function(){
-document.querySelector(".tgf7").style.color = "red";
-document.querySelector(".tgt7").style.color = "black"
-
-
-})
-//End
-//start
-var done8 = document.querySelector(".tgt8");
-done8.addEventListener("click", function(){
-document.querySelector(".tgt8").style.color = "green";
-document.querySelector(".tgf8").style.color = "black"
-
-
-})
-
-var notDone8 = document.querySelector(".tgf8");
-notDone8.addEventListener("click", function(){
-document.querySelector(".tgf8").style.color = "red";
-document.querySelector(".tgt8").style.color = "black"
-
-
-})
-//End
-//start
-var done9 = document.querySelector(".tgt9");
-done9.addEventListener("click", function(){
-document.querySelector(".tgt9").style.color = "green";
-document.querySelector(".tgf9").style.color = "black"
-
-
-})
-
-var notDone9 = document.querySelector(".tgf9");
-notDone9.addEventListener("click", function(){
-document.querySelector(".tgf9").style.color = "red";
-document.querySelector(".tgt9").style.color = "black"
-
-
-})
-//End
-//start
-var done10 = document.querySelector(".tgt10");
-done10.addEventListener("click", function(){
-document.querySelector(".tgt10").style.color = "green";
-document.querySelector(".tgf10").style.color = "black"
-
-
-})
-
-var notDone10 = document.querySelector(".tgf10");
-notDone10.addEventListener("click", function(){
-document.querySelector(".tgf10").style.color = "red";
-document.querySelector(".tgt10").style.color = "black"
-
-
-})
-//End
-//start
-var done11 = document.querySelector(".tgt11");
-done11.addEventListener("click", function(){
-document.querySelector(".tgt11").style.color = "green";
-document.querySelector(".tgf11").style.color = "black"
-
-
-})
-
-var notDone11 = document.querySelector(".tgf11");
-notDone11.addEventListener("click", function(){
-document.querySelector(".tgf11").style.color = "red";
-document.querySelector(".tgt11").style.color = "black"
-
-
-})
-//End
-//start
-var done12 = document.querySelector(".tgt12");
-done12.addEventListener("click", function(){
-document.querySelector(".tgt12").style.color = "green";
-document.querySelector(".tgf12").style.color = "black"
-
-
-})
-
-var notDone12 = document.querySelector(".tgf12");
-notDone12.addEventListener("click", function(){
-document.querySelector(".tgf12").style.color = "red";
-document.querySelector(".tgt12").style.color = "black"
-
-
-})
-//End
-//start
-var done13 = document.querySelector(".tgt13");
-done13.addEventListener("click", function(){
-document.querySelector(".tgt13").style.color = "green";
-document.querySelector(".tgf13").style.color = "black"
-
-
-})
-
-var notDone13 = document.querySelector(".tgf13");
-notDone13.addEventListener("click", function(){
-document.querySelector(".tgf13").style.color = "red";
-document.querySelector(".tgt13").style.color = "black"
-
-
-})
-//End
-//start
-var done14 = document.querySelector(".tgt14");
-done14.addEventListener("click", function(){
-document.querySelector(".tgt14").style.color = "green";
-document.querySelector(".tgf14").style.color = "black"
-
-
-})
-
-var notDone14 = document.querySelector(".tgf14");
-notDone14.addEventListener("click", function(){
-document.querySelector(".tgf14").style.color = "red";
-document.querySelector(".tgt14").style.color = "black"
-
-
-})
-//End
-//start
-var done15 = document.querySelector(".tgt15");
-done15.addEventListener("click", function(){
-document.querySelector(".tgt15").style.color = "green";
-document.querySelector(".tgf15").style.color = "black"
-
-
-})
-
-var notDone15 = document.querySelector(".tgf15");
-notDone15.addEventListener("click", function(){
-document.querySelector(".tgf15").style.color = "red";
-document.querySelector(".tgt15").style.color = "black"
-
-
-});
-var delete1 = document.querySelector(".sil1");
-delete1.addEventListener("click", function(){
-var delete11 =  delete1.parentElement
-delete11.style.backgroundColor = 'black';
-alert(this.parentElement)
-})
-//End
-*/
-
-}
-
-
-//CLICK FOR DELETE AND SELECT
-
-
-
-
-
-//Fin de Todo List
+number +=1;}
 else{ 
     alertF.style.display = "block";
     alertF.innerHTML = " Please enter valid information";
@@ -385,7 +109,13 @@ budget_add.addEventListener("click", function(){
     budget_Add_Value.value = "";
     //history
   
-  
+    var ulList1 = document.getElementById("ulHistorik1");
+    var myLiEx1 = `
+    <li><span style="color:green" id="dew"><i class="fas fa-plus-square"></i></span><span style="color:green;">${x3}</span> <span>02/04/2009</span><span onClick="budget_Screen.innerHTML = parseInt(budget_Screen.textContent) - parseInt(this.parentElement.children[1].textContent);this.parentElement.remove();balance_Screen.innerHTML = parseInt(balance_Screen.textContent) - parseInt(this.parentElement.children[1].textContent)" style="color:rgb(154, 31, 150)"> <i class="fas fa-trash-restore"></i></span></li>
+    `
+   
+ulList1.innerHTML +=myLiEx1;
+  /*
    var li = document.createElement("li");
    var span = document.createElement("span");
    span.style.color= "green";
@@ -397,12 +127,12 @@ span.innerHTML = "12/09/2019";
   
   
   document.getElementById("ulList1").appendChild(li);
-    
+    */
 
       
 })
 
-
+var numero = 1;
 // Substract Money
 Expense_Add.addEventListener("click", function(){
     alertF.style.display = "none";
@@ -410,32 +140,57 @@ Expense_Add.addEventListener("click", function(){
     var y2 = parseInt(y1);  //expense final 
   var y3 = parseInt(Expense.value);//input value
   var y4 = parseInt(balance_Screen.textContent);
- 
-  let yT = y3 + y2;
+
+
+
   if( y4<y3 ){
     alertF.style.display = "block";
     alertF.innerHTML = " Oups..You don't have anougth budget!";
     }else{
+
+        var ulList = document.getElementById("ulHistorik");
+        var myLiEx = `
+        <li><span id="dew" style="color:red"><i class="fas fa-minus-square"></i></span><span style="color: red;">${Expense.value}</span> <span>02/04/2009</span><span onClick="expense_Screen.innerHTML = parseInt(expense_Screen.textContent) - parseInt(this.parentElement.children[1].textContent);this.parentElement.remove();balance_Screen.innerHTML = parseInt(balance_Screen.textContent) + parseInt(this.parentElement.children[1].textContent)"  style="color:rgb(154, 31, 150)"> <i class="fas fa-trash-restore"></i></span></li>
+        `
+       
+ulList.innerHTML +=myLiEx;
+expense_Screen.innerHTML =  y2 + y3;
+    
+balance_Screen.innerHTML =   y4 - y3;
+Expense_Add.value = "";
+
+   /*var li = document.createElement("li");
+   var span = document.createElement("span");
+   span.style.color= "red";
+
+   
     expense_Screen.innerHTML =  y2 + y3;
     
     balance_Screen.innerHTML =   y4 - y3;
    Expense_Add.value = "";
 
-   var li = document.createElement("li");
-   var span = document.createElement("span");
-   span.style.color= "red";
-   span.style.float = "right";
-   li.innerHTML = Expense_T.value;
+   //span.style.float = "right";
+   var spanExpense = document.createElement("span");
+   spanExpense.innerHTML += Expense_T.value;
+   li.appendChild(spanExpense)
 span.innerHTML = y3;
 
+
    li.appendChild(span);
+   li.innerHTML += delt;
   
    ul.appendChild(li);
-  document.getElementById("ulList2").appendChild(ul);
-  document.getElementById("ulList2").classList.add("fadeIn")
+  document.getElementById("ulList2").appendChild(ul);*/
+
   }
+  Expense.value = "";
+  Expense_T.value = "";
 
 })
+
+//delete or remove an added expense
+
+ 
 
 // Partie De Contact
 var openContact = document.getElementById("Opencontact");
@@ -473,8 +228,19 @@ let Myclass = class {
     }
     }
 var linkSite = document.getElementById("theWeb").value;
+var regexp =  /^(?:(?:https?|ftp):\/\/)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,})))(?::\d{2,5})?(?:\/\S*)?$/;
 
     btnAddN.addEventListener("click", function(){
+        if(isim.value == '' || telefon.value == "" || mailadres.value == "" ||website.value == ""){
+           if(regexp.test(website.value) == true){
+            alertF.style.display = "block";
+            alert("wb no")
+           }
+        
+            alertF.style.display = "block";
+        }else{
+
+        
         alertF.style.display = "none";
         r+=1;
       
@@ -490,7 +256,8 @@ var linkSite = document.getElementById("theWeb").value;
 <div class="bar2">
     <span class="" id="theMail${r}">elmasaakiano@gmail.com</span>
     <span class="" id="theWeb${r}"> www.masaaki.com</span>
-    <i class="far fa-trash-alt"></i>
+    
+  <span  style="color:rgb(154, 31, 150);" onClick="this.parentElement.parentElement.remove()"> <i class="far fa-trash-alt"></i></span>
     
 
 </div>
@@ -505,8 +272,10 @@ var linkSite = document.getElementById("theWeb").value;
        document.getElementById("ulContact").classList.add("fadeIn")
         let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value)
         addNow.addValues();
-    })
-
+    }})
+  function  modify(){
+      this.parentElement.children[0].textContent
+  }
 
 //partie Blocknote
 var openNotes = document.getElementById("notesave");

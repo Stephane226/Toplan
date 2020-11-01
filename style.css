@@ -397,6 +397,12 @@ body input {
   background-color: aliceblue;
   border-top: 1px solid black;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 30px;
 }
 
 .bgk {
@@ -698,5 +704,10 @@ body input {
 .remove {
   font-size: 50px;
   color: yellow;
+}
+
+.scroll-y ul li {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=style.css.map */

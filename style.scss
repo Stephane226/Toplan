@@ -363,6 +363,7 @@ background-color: rgb(233, 233, 233);
     }
    
 }
+
 .scroll-y{
     height:210px;
     overflow-y:scroll;
@@ -375,6 +376,9 @@ background-color: rgb(233, 233, 233);
             background-color:rgb(240, 248, 255);
             border-top:1px solid black;
             height:20px;
+            display: flex;
+            justify-content: space-around;
+            height:30px;
         }
     }
 }
@@ -654,4 +658,11 @@ margin:0 auto;
 .remove{
     font-size:50px;
     color:yellow;
+}
+
+.scroll-y{
+    ul{
+        li{
+justify-content: space-around;}
+}
 }
