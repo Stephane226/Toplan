@@ -7,11 +7,13 @@ var innerDom = document.getElementById("oneTd");
 var number = 1;
 var ul = document.createElement("ul");
 var alertF = document.getElementById("alertpId");
+var leTittre = document.getElementById("leTittre");
 
 //
     
 
 function AddTodo(){
+    
     alertF.style.display = "none";
     var dateformat = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(19|20)\d{2}$/;
     // Match the date format through regular expression
@@ -57,6 +59,7 @@ var MnM_Btn =document.getElementById("MnMbtn");
 
 
 tDoL_Btn.addEventListener("click", function(){
+    leTittre.innerHTML = " My Todo List"
       alertF.style.display = "none";
       document.getElementById("MnyM").style.display = "none";
       document.getElementById("blockNt").style.display = "none";
@@ -68,6 +71,8 @@ tDoL_Btn.addEventListener("click", function(){
 })
 
 MnM_Btn.addEventListener("click", function(){
+    leTittre.innerHTML = " My Money Management";
+   
     alertF.style.display = "none";
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "block";
@@ -195,6 +200,7 @@ span.innerHTML = y3;
 // Partie De Contact
 var openContact = document.getElementById("Opencontact");
 openContact.addEventListener("click",function(){
+    leTittre.innerHTML = " My Contacts"
     alertF.style.display = "none";
     
     document.getElementById("cnt").style.display = "block";
@@ -227,7 +233,7 @@ let Myclass = class {
         document.getElementById("theWeb"+r).innerHTML = this.siteweb;
     }
     }
-var linkSite = document.getElementById("theWeb").value;
+var linkSite = document.getElementById("theWeb");
     btnAddN.addEventListener("click", function(){
         if(isim.value == '' || telefon.value == "" || mailadres.value == "" ||website.value == "" || 
         website.value.indexOf(".")== -1 || website.value.indexOf("www")== -1 || mailadres.value.indexOf("@")== -1 || 
@@ -235,6 +241,7 @@ var linkSite = document.getElementById("theWeb").value;
           
         
             alertF.style.display = "block";
+            
         }else{
 
           
@@ -245,7 +252,7 @@ var linkSite = document.getElementById("theWeb").value;
            
 <div class="bar">
 <div class="bar1">
-    <i class="fas fa-user"></i>
+  <i class="fas fa-user"></i>
     <span class="" id="theName${r}">Masaaki</span>
     <span class="" id="theNumber${r}">+90 329 322 33 22</span>
 </div>
@@ -267,9 +274,16 @@ var linkSite = document.getElementById("theWeb").value;
      
        oneLine.innerHTML +=cntnt;
        document.getElementById("ulContact").classList.add("fadeIn")
-        let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value)
-        addNow.addValues();
-         }})
+        let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value);
+        addNow.addValues()
+        isim.value = "";
+        telefon.value = "";
+        mailadres.value = "";
+        website.value = "";}}
+
+        
+         
+         )
   function  modify(){
       this.parentElement.children[0].textContent
   }
@@ -277,7 +291,7 @@ var linkSite = document.getElementById("theWeb").value;
 //partie Blocknote
 var openNotes = document.getElementById("notesave");
 openNotes.addEventListener("click",function(){
-
+    leTittre.innerHTML = " My Notes"
     alertF.style.display = "none";
     
     document.getElementById("cnt").style.display = "none";

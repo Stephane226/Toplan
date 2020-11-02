@@ -11,9 +11,15 @@ body input {
   border-radius: 10px;
   outline-style: none;
   border-style: none;
-  background-color: #e7fffb;
+  background-color: white;
   font-size: 13px;
-  border: 1px thin black;
+}
+
+body button {
+  border-radius: 30px;
+  color: wheat;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .fullSize {
@@ -52,7 +58,7 @@ body input {
   background-color: #cfcfcf;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 10px;
+  border-right: 10px;
 }
 
 .ulElem ul li:hover {
@@ -716,5 +722,9 @@ body input {
 .scroll-y ul li {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.bar1 .fas {
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

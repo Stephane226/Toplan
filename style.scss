@@ -9,15 +9,21 @@ body{
         border-radius:10px;
         outline-style: none;
         border-style: none;
-        background-color:rgb(231, 255, 251);
+        background-color:rgb(255, 255, 255);
         font-size:13px;
-        border:1px thin black;
+      
 
     }
+    button{
+        border-radius:30px;
+        color:wheat;
+      font-size:14px;
+      font-weight:600;
+    }
 }
-//#183153;
+//#183153;#183153
 //STOCKAGE DES VARIABLES
-//#177485;
+//#177485; #177485
 $ThemeColor:#177485 ;
 $BG:rgb(240, 240, 245);
 $FULL:100%;
@@ -62,7 +68,7 @@ $FULL:100%;
     background-color:rgb(207, 207, 207);
     font-size:18px;
     font-weight:500;
-    border-radius: 10px;
+    border-right: 10px;
     
  }
  .ulElem ul li:hover{
@@ -668,4 +674,9 @@ margin:0 auto;
         li{
 justify-content: space-around;}
 }
+}
+.bar1{
+    .fas{
+        color:green;
+    }
 }
