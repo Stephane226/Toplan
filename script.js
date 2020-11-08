@@ -373,6 +373,10 @@ parameters.addEventListener("click",function(){
     leTittre.innerHTML = " Settings";
     alertF.style.display = "none";
     
+    restoreArea.style.display = "none";
+    securityArea.style.display = "none";
+    deleteArea.style.display = "none";
+    
     document.getElementById("parameters").style.display = "block";
     document.getElementById("parameters").classList.add("fadeIn")
     document.getElementById("tDoList").style.display = "none";
@@ -383,10 +387,10 @@ parameters.addEventListener("click",function(){
 
 // DIFFERANTE VARIABLES FOR PARAMETER ELEMENTS
 //les buttons
-var themeBtn = document.getElementById("paramTheme");
-var restoreBtn = document.getElementById("paramRest");
-var deleteBtn = document.getElementById("paramDelete");
-var updateBtn = document.getElementById("paramChange");
+var themeBtn = document.getElementById("restoreAreaId");
+var restoreBtn = document.getElementById("paramRestId");
+var deleteBtn = document.getElementById("paramDeleteId");
+var updateBtn = document.getElementById("paramChangeId");
 
 // Rich the processes areas
 var themeArea = document.getElementById("themeId");
@@ -394,4 +398,44 @@ var restoreArea = document.getElementById("restoreId");
 var securityArea = document.getElementById("securityId");
 var deleteArea = document.getElementById("deleteId");
 
-//
+//event listeners
+themeBtn.addEventListener("click",function(){
+   // leTittre.innerHTML = " Settings";
+    alertF.style.display = "none";
+    
+    themeArea.style.display = "block";
+    themeArea.classList.add("fadeIn")
+    restoreArea.style.display = "none";
+    securityArea.style.display = "none";
+    deleteArea.style.display = "none";
+});
+restoreBtn.addEventListener("click",function(){
+    // leTittre.innerHTML = " Settings";
+     alertF.style.display = "none";
+     
+     restoreArea.style.display = "block";
+     restoreArea.classList.add("fadeIn")
+     themeArea.style.display = "none";
+     securityArea.style.display = "none";
+     deleteArea.style.display = "none";
+ });
+ deleteBtn.addEventListener("click",function(){
+    // leTittre.innerHTML = " Settings";
+     alertF.style.display = "none";
+     
+     deleteArea.style.display = "block";
+     deleteArea.classList.add("fadeIn")
+     themeArea.style.display = "none";
+     securityArea.style.display = "none";
+     restoreArea.style.display = "none";
+ });
+ updateBtn.addEventListener("click",function(){
+    // leTittre.innerHTML = " Settings";
+     alertF.style.display = "none";
+     
+     restoreArea.style.display = "block";
+     restoreArea.classList.add("fadeIn")
+     themeArea.style.display = "none";
+     securityArea.style.display = "none";
+     deleteArea.style.display = "none";
+ });
