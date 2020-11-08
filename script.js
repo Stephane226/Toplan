@@ -376,7 +376,7 @@ parameters.addEventListener("click",function(){
     restoreArea.style.display = "none";
     securityArea.style.display = "none";
     deleteArea.style.display = "none";
-    
+
     document.getElementById("parameters").style.display = "block";
     document.getElementById("parameters").classList.add("fadeIn")
     document.getElementById("tDoList").style.display = "none";
@@ -414,7 +414,7 @@ restoreBtn.addEventListener("click",function(){
      alertF.style.display = "none";
      
      restoreArea.style.display = "block";
-     restoreArea.classList.add("fadeIn")
+     restoreArea.classList.add("fadeIn");
      themeArea.style.display = "none";
      securityArea.style.display = "none";
      deleteArea.style.display = "none";
@@ -424,7 +424,7 @@ restoreBtn.addEventListener("click",function(){
      alertF.style.display = "none";
      
      deleteArea.style.display = "block";
-     deleteArea.classList.add("fadeIn")
+     deleteArea.classList.add("fadeIn");
      themeArea.style.display = "none";
      securityArea.style.display = "none";
      restoreArea.style.display = "none";
@@ -434,7 +434,7 @@ restoreBtn.addEventListener("click",function(){
      alertF.style.display = "none";
      
      restoreArea.style.display = "block";
-     restoreArea.classList.add("fadeIn")
+     restoreArea.classList.add("fadeIn");
      themeArea.style.display = "none";
      securityArea.style.display = "none";
      deleteArea.style.display = "none";
