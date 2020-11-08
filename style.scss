@@ -680,3 +680,41 @@ justify-content: space-around;}
         color:green;
     }
 }
+
+section .parameters{
+   
+        height:500px;
+        width:100%;
+        overflow-y: scroll;
+        background-color: white;
+    
+    .params{
+        display:flex;
+       // justify-content: space-around;
+        width:70%;
+        margin:0 auto;
+        div{
+            height:70px;
+            background-color:$ThemeColor;
+            color:white;
+            font-size:16px;
+            width:170px;
+            margin-right:3px;
+        }
+    }
+
+  .paramsLine{
+      width:69.5%;
+      height:70px;
+      border-left:1px $ThemeColor solid;
+      border-right:1px $ThemeColor solid;
+
+      margin:0 auto;
+  }
+}
+.parameterArea{
+    width:94%;
+    height:350px;
+    background-color:black;
+    margin:0 auto;
+}

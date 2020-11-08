@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toplan</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylsheet" href="weather_app/wstyle.css"/>
+    <link rel="stylesheet" href="font/Rimouski.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
     integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
@@ -23,17 +25,37 @@
                     <li id="tDoLbtn">Todo List <span class="SpanIcon"><i class="fas fa-clipboard-list"></i> </span></li>
                       <li id="MnMbtn">Money Management<span class="SpanIcon"> <i class="fas fa-dollar-sign"></i></span></li>
                       <li id="Opencontact">Contact Saver <span class="SpanIcon"><i class="fas fa-id-card-alt"></i></span></li>
-                   <li>Account Login Info <span class="SpanIcon"><i class="fas fa-user"></i></span></li>
                  <li ID="notesave">Save Note <span class="SpanIcon"><i class="far fa-sticky-note"></i></span></li>
-                 <li ID="notesave">Parameters<span class="SpanIcon"><i class="fas fa-user-cog"></i></span></li>
+                 <li ID="parameters">Parameters<span class="SpanIcon"><i class="fas fa-user-cog"></i></span></li>
 
                 </ul>
               </div>
            
-               
-              <div class="forPc">
-
+              <!-- START OF APP OF WEATHER
+              <div class="forPcl">
+                <div class="container">
+                    <div class="app-title">
+                        <p>Weather</p>
+                    </div>
+                    <div class="notification"> </div>
+                    <div class="weather-container">
+                        <div class="weather-icon">
+                            <img src="icons/unknown.png" alt="">
+                        </div>
+                        <div class="temperature-value">
+                            <p>- °<span>C</span></p>
+                        </div>
+                        <div class="temperature-description">
+                            <p> - </p>
+                        </div>
+                        <div class="location">
+                            <p>-</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+                          <!-- END OF APP OF WEATHER--> 
+
           </div>
 <div class="contentSize">
 <div class="title"> 
@@ -442,6 +464,39 @@ rows="13" cols="50">
 </div>
 <!--FIN de blocknOTE-->
 
+<!--START OF PARAMETERS-->
+<section class="">
+<div class="parameters">
+<div class="params">
+   <div class="paramTheme" id="">2</div>
+   <div class="paramRest" id="">2</div>
+   <div class="paramDelete" id="">2</div>
+   <div class="paramChange" id="">2</div>
+
+
+</div>
+<div class="paramsLine" id="">2</div>
+<div class="parameterArea">
+
+</div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--END OF PARAMETERS-->
 
 
 
@@ -466,5 +521,6 @@ rows="13" cols="50">
 
     <script src="script.js"></script>
     <script src="toplan.js"></script>
+    <script src="weather_app/app.js"></script>
 </body>
 </html>

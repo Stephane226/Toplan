@@ -727,4 +727,43 @@ body button {
 .bar1 .fas {
   color: green;
 }
+
+section .parameters {
+  height: 500px;
+  width: 100%;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+section .parameters .params {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+section .parameters .params div {
+  height: 70px;
+  background-color: #177485;
+  color: white;
+  font-size: 16px;
+  width: 170px;
+  margin-right: 3px;
+}
+
+section .parameters .paramsLine {
+  width: 69.5%;
+  height: 70px;
+  border-left: 1px #177485 solid;
+  border-right: 1px #177485 solid;
+  margin: 0 auto;
+}
+
+.parameterArea {
+  width: 94%;
+  height: 350px;
+  background-color: black;
+  margin: 0 auto;
+}
 /*# sourceMappingURL=style.css.map */

@@ -66,6 +66,8 @@ tDoL_Btn.addEventListener("click", function(){
       document.getElementById("cnt").style.display = "none";
     document.getElementById("tDoList").style.display = "block";
     document.getElementById("tDoList").classList.add("fadeIn");
+    document.getElementById("parameters").style.display = "none";
+
    
 
 })
@@ -81,6 +83,8 @@ MnM_Btn.addEventListener("click", function(){
     document.getElementById("MnyM").style.marginTop = "10px";
     document.getElementById("cnt").style.display = "none";
     document.getElementById("blockNt").style.display = "none";
+    document.getElementById("parameters").style.display = "none";
+
 
 })
 
@@ -208,6 +212,8 @@ openContact.addEventListener("click",function(){
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "none";
     document.getElementById("blockNt").style.display = "none";
+    document.getElementById("parameters").style.display = "none";
+
 });
 
 //Partie contact form 
@@ -299,6 +305,7 @@ openNotes.addEventListener("click",function(){
     document.getElementById("MnyM").style.display = "none";
     document.getElementById("blockNt").style.display = "block"
     document.getElementById("blockNt").classList.add("fadeIn");
+    document.getElementById("parameters").style.display = "none";
 });
 
 var addNote = document.getElementById("sNote");
@@ -341,4 +348,35 @@ Note du chef pour batir...
     noteTitle.value = "";
     
 }
+});
+
+
+//APP CONSTANTS AND VARS
+const KELVIN = 273;
+const key = "82005d27a116c2880c8f0fcb866998a0";
+function getWeather(latitude, longitude){
+    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
+
+
+fetch(api).then(function(response){
+    let data = response.json();
+    return data;
+}).then(function(data){
+
+});
+
+}
+
+// PARAMETRELER
+var parameters = document.getElementById("parameters");
+openContact.addEventListener("click",function(){
+    leTittre.innerHTML = " My Contacts"
+    alertF.style.display = "none";
+    
+    document.getElementById("parameters").style.display = "block";
+    document.getElementById("parameters").classList.add("fadeIn")
+    document.getElementById("tDoList").style.display = "none";
+    document.getElementById("MnyM").style.display = "none";
+    document.getElementById("blockNt").style.display = "none";
+    document.getElementById("cnt").style.display = "none";
 });
