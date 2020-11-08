@@ -804,4 +804,40 @@ section .parameters{
             margin-bottom:20px;
         }
     }
+    #securityId{
+        padding-top:10px;
+        h3{
+            text-align:center;
+            margin:25px;
+
+        }
+        div{
+            width:60%;
+            margin:0 auto;
+            padding:5px;
+        }
+        label{
+            width:130px;
+            margin-bottom:5px;
+            font-size:17px;
+            margin-right:10px;
+        }
+        input{
+            width:150px;
+            height:24px;
+            
+        }
+        button{
+            width:180px;
+            height:40px;
+            border:none;
+            background-color:rgb(4, 128, 10);
+            color:rgb(0, 0, 0);
+            cursor:pointer;
+            margin-top:10px;
+       border-radius: 20px;;
+            margin-left:350px;
+            margin-bottom:20px;
+        }
+    }
 }

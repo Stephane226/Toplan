@@ -368,9 +368,9 @@ fetch(api).then(function(response){
 }
 
 // PARAMETRELER
-var parameters = document.getElementById("parameters");
-openContact.addEventListener("click",function(){
-    leTittre.innerHTML = " My Contacts"
+var parameters = document.getElementById("parametersBtn");
+parameters.addEventListener("click",function(){
+    leTittre.innerHTML = " Settings";
     alertF.style.display = "none";
     
     document.getElementById("parameters").style.display = "block";
