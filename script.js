@@ -380,3 +380,18 @@ parameters.addEventListener("click",function(){
     document.getElementById("blockNt").style.display = "none";
     document.getElementById("cnt").style.display = "none";
 });
+
+// DIFFERANTE VARIABLES FOR PARAMETER ELEMENTS
+//les buttons
+var themeBtn = document.getElementById("paramTheme");
+var restoreBtn = document.getElementById("paramRest");
+var deleteBtn = document.getElementById("paramDelete");
+var updateBtn = document.getElementById("paramChange");
+
+// Rich the processes areas
+var themeArea = document.getElementById("themeId");
+var restoreArea = document.getElementById("restoreId");
+var securityArea = document.getElementById("securityId");
+var deleteArea = document.getElementById("deleteId");
+
+//
