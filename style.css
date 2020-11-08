@@ -741,6 +741,37 @@ section .parameters .params {
   display: flex;
   width: 70%;
   margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+}
+
+section .parameters .params .fa-paint-roller {
+  font-size: 40px;
+  color: orange;
+  margin-top: 3px;
+}
+
+section .parameters .params .fa-window-restore {
+  font-size: 40px;
+  color: #0caf22;
+  margin-top: 3px;
+}
+
+section .parameters .params .fa-lock {
+  font-size: 40px;
+  color: red;
+  margin-top: 3px;
+}
+
+section .parameters .params .fa-biohazard {
+  font-size: 40px;
+  color: #0a0a0a;
+  margin-top: 3px;
+}
+
+section .parameters .params span {
+  font-size: 13px;
+  color: black;
 }
 
 section .parameters .params div {
@@ -757,13 +788,87 @@ section .parameters .paramsLine {
   height: 70px;
   border-left: 1px #177485 solid;
   border-right: 1px #177485 solid;
+  margin-top: -3px;
   margin: 0 auto;
 }
 
 .parameterArea {
   width: 94%;
   height: 350px;
-  background-color: black;
+  background-color: #f0f3f1;
   margin: 0 auto;
+}
+
+.parameterArea .themesColor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 14px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.parameterArea .themesColor div {
+  margin: 17px;
+}
+
+.parameterArea .themesColor div .fas {
+  font-size: 40px;
+}
+
+.parameterArea #restoreId {
+  padding-top: 24px;
+}
+
+.parameterArea #restoreId h3 {
+  text-align: center;
+  margin: 25px;
+}
+
+.parameterArea #restoreId p {
+  margin: 15px;
+  text-align: center;
+}
+
+.parameterArea #restoreId button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: #177485;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+.parameterArea #deleteId {
+  padding-top: 24px;
+}
+
+.parameterArea #deleteId h3 {
+  text-align: center;
+  margin: 25px;
+}
+
+.parameterArea #deleteId p {
+  margin: 15px;
+  text-align: center;
+}
+
+.parameterArea #deleteId button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  color: black;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 20px;
+  margin-left: 350px;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -693,6 +693,32 @@ section .parameters{
        // justify-content: space-around;
         width:70%;
         margin:0 auto;
+        text-align:center;
+        padding:5px;
+        .fa-paint-roller{
+        font-size:40px;
+        color:orange;
+        margin-top:3px;
+    }
+    .fa-window-restore{
+        font-size:40px;
+        color:rgb(12, 175, 34);
+        margin-top:3px;
+    }
+    .fa-lock{
+        font-size:40px;
+        color:red;
+        margin-top:3px;
+    }
+    .fa-biohazard{
+        font-size:40px;
+        color:rgb(10, 10, 10);
+        margin-top:3px;
+    }
+    span{
+        font-size:13px;
+        color:black;
+    }
         div{
             height:70px;
             background-color:$ThemeColor;
@@ -708,13 +734,74 @@ section .parameters{
       height:70px;
       border-left:1px $ThemeColor solid;
       border-right:1px $ThemeColor solid;
-
+     margin-top:-3px;
       margin:0 auto;
   }
 }
 .parameterArea{
     width:94%;
     height:350px;
-    background-color:black;
+    background-color:rgb(240, 243, 241);
     margin:0 auto;
+    .themesColor{
+        display:flex;
+        width:50%;
+        margin:0 auto;
+        margin-top:14px;
+        flex-wrap: wrap;
+        div{
+            margin:17px;
+            .fas{
+                font-size:40px;
+            }
+        }
+    }
+    #restoreId{
+        padding-top:24px;
+        h3{
+            text-align:center;
+            margin:25px;
+
+        }
+        p{
+            margin:15px;
+            text-align:center;
+        }
+        button{
+            width:180px;
+            height:40px;
+            border:none;
+            background-color:$ThemeColor;
+            color:white;
+            cursor:pointer;
+            margin-top:10px;
+       border-radius: 20px;;
+            margin-left:350px;
+            margin-bottom:20px;
+        }
+    }
+    #deleteId{
+        padding-top:24px;
+        h3{
+            text-align:center;
+            margin:25px;
+
+        }
+        p{
+            margin:15px;
+            text-align:center;
+        }
+        button{
+            width:180px;
+            height:40px;
+            border:none;
+            background-color:red;
+            color:rgb(0, 0, 0);
+            cursor:pointer;
+            margin-top:10px;
+       border-radius: 20px;;
+            margin-left:350px;
+            margin-bottom:20px;
+        }
+    }
 }
