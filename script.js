@@ -368,8 +368,11 @@ fetch(api).then(function(response){
 }
 
 // PARAMETRELER
+document.getElementById('parameters').style.display = "none";
+
 var parameters = document.getElementById("parametersBtn");
 parameters.addEventListener("click",function(){
+    document.getElementById('parameters').style.display = "block";
     leTittre.innerHTML = " Settings";
     alertF.style.display = "none";
     
@@ -389,8 +392,8 @@ parameters.addEventListener("click",function(){
 //les buttons
 var themeBtn = document.getElementById("restoreAreaId");
 var restoreBtn = document.getElementById("paramRestId");
-var deleteBtn = document.getElementById("paramDeleteId");
-var updateBtn = document.getElementById("paramChangeId");
+var updateBtn = document.getElementById("paramDeleteId");
+var deleteBtn = document.getElementById("paramChangeId");
 
 // Rich the processes areas
 var themeArea = document.getElementById("themeId");
@@ -433,9 +436,9 @@ restoreBtn.addEventListener("click",function(){
     // leTittre.innerHTML = " Settings";
      alertF.style.display = "none";
      
-     restoreArea.style.display = "block";
-     restoreArea.classList.add("fadeIn");
+     securityArea.style.display = "block";
+     securityArea.classList.add("fadeIn");
      themeArea.style.display = "none";
-     securityArea.style.display = "none";
+     restoreArea.style.display = "none";
      deleteArea.style.display = "none";
  });
