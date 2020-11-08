@@ -24,8 +24,8 @@ body{
 }
 //#183153;#183153
 //STOCKAGE DES VARIABLES
-//#177485; #177485
-$ThemeColor:#177485 ;
+//#177485; #177485 #177485
+$ThemeColor: #0B4141;
 $BG:rgb(240, 240, 245);
 $FULL:100%;
 
@@ -722,10 +722,13 @@ section .parameters{
         div{
             height:70px;
             background-color:$ThemeColor;
-            color:white;
             font-size:16px;
             width:170px;
             margin-right:3px;
+            span{
+                color:white;
+
+            }
         }
     }
 

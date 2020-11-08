@@ -62,7 +62,7 @@ body button {
 }
 
 .ulElem ul li:hover {
-  background-color: #177485;
+  background-color: #0B4141;
   color: whitesmoke;
   cursor: pointer;
   font-size: 20px;
@@ -71,7 +71,7 @@ body button {
 .endi {
   width: 100%;
   height: 50px;
-  background-color: #177485;
+  background-color: #0B4141;
 }
 
 .forPc {
@@ -159,7 +159,7 @@ body button {
   height: 40px;
   color: white;
   border: none;
-  background-color: #177485;
+  background-color: #0B4141;
   font-size: 18px;
   padding: 3px;
   cursor: pointer;
@@ -189,7 +189,7 @@ body button {
 .s1 {
   width: 7%;
   height: 50px;
-  background-color: #177485;
+  background-color: #0B4141;
   font-size: 19px;
   color: white;
   font-weight: 800;
@@ -291,7 +291,7 @@ body button {
 .xBtn {
   height: 32px;
   width: 60px;
-  background-color: #177485;
+  background-color: #0B4141;
   color: #fceeee;
   font-size: 15px;
   border-style: none;
@@ -419,7 +419,7 @@ body button {
 .bgk {
   height: 50px;
   width: 100%;
-  background-color: #177485;
+  background-color: #0B4141;
   color: wheat;
 }
 
@@ -473,7 +473,7 @@ body button {
   width: 180px;
   height: 40px;
   border: none;
-  background-color: #177485;
+  background-color: #0B4141;
   color: white;
   cursor: pointer;
   margin-top: 10px;
@@ -517,7 +517,7 @@ body button {
 
 .contact .fas {
   font-size: 26px;
-  color: #177485;
+  color: #0B4141;
 }
 
 .contact .far {
@@ -537,7 +537,7 @@ body button {
 .blockNote .addC {
   font-size: 36px;
   cursor: pointer;
-  color: #177485;
+  color: #0B4141;
   text-align: center;
 }
 
@@ -615,7 +615,7 @@ body button {
   width: 180px;
   height: 40px;
   border: none;
-  background-color: #177485;
+  background-color: #0B4141;
   color: white;
   cursor: pointer;
   margin-top: 10px;
@@ -776,18 +776,21 @@ section .parameters .params span {
 
 section .parameters .params div {
   height: 70px;
-  background-color: #177485;
-  color: white;
+  background-color: #0B4141;
   font-size: 16px;
   width: 170px;
   margin-right: 3px;
 }
 
+section .parameters .params div span {
+  color: white;
+}
+
 section .parameters .paramsLine {
   width: 69.5%;
   height: 70px;
-  border-left: 1px #177485 solid;
-  border-right: 1px #177485 solid;
+  border-left: 1px #0B4141 solid;
+  border-right: 1px #0B4141 solid;
   margin-top: -3px;
   margin: 0 auto;
 }
@@ -836,7 +839,7 @@ section .parameters .paramsLine {
   width: 180px;
   height: 40px;
   border: none;
-  background-color: #177485;
+  background-color: #0B4141;
   color: white;
   cursor: pointer;
   margin-top: 10px;
