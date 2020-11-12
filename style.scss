@@ -1,9 +1,20 @@
+
+//#183153;#183153
+//STOCKAGE DES VARIABLES
+//#177485; #177485 #177485
+$ThemeColor: #425664;
+$BG:rgb(240, 240, 245);
+$FULL:100%;
+
 *{
     padding:0;
     margin:0;
 
 }
 body{
+    border-left:9px solid $ThemeColor;
+    border-right:9px solid $ThemeColor;
+
     overflow: hidden;
     input{
         border-radius:10px;
@@ -11,7 +22,7 @@ body{
         border-style: none;
         background-color:rgb(255, 255, 255);
         font-size:13px;
-      
+      background-image:url('noise.png');
 
     }
     button{
@@ -22,15 +33,12 @@ body{
     }
    
 }
-//#183153;#183153
-//STOCKAGE DES VARIABLES
-//#177485; #177485 #177485
-$ThemeColor: #0B4141;
-$BG:rgb(240, 240, 245);
-$FULL:100%;
 
 
 
+.firstMenuBar{
+    background-color:$ThemeColor;
+}
 
 //FIN DES VARIABLES
 //GENERAL
@@ -658,6 +666,24 @@ margin:0 auto;
       }
   }
 
+  //SECOND ANIMATION
+
+  .fadeInB{
+    animation: fadeInB 2s;
+  }
+
+  @keyframes fadeInB{
+      from{
+         opacity: 0;
+         margin-top:-100px  
+      }
+      to{
+             opacity: 1;
+             
+      }
+  }
+
+
   //debut de login page 
 
 
@@ -843,4 +869,8 @@ section .parameters{
             margin-bottom:20px;
         }
     }
+}
+
+.menuToggle{
+    margin-left:-300px
 }
