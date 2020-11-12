@@ -194,7 +194,7 @@ ulList.innerHTML +=myLiEx;
   Expense_T.value = "";
 
 })
-                      //#################    TODOLIST APP END    ###########################
+                      //#################    MANAGE  APP END    ###########################
 
 
 
@@ -232,7 +232,7 @@ openContact.addEventListener("click",function(){
 });
 
 //Bir calss olusturdum her contact eklemek istenince  isim numara mail ve websitesi 
-//her seferinde 
+//
 
 
 let Myclass = class {
@@ -250,7 +250,7 @@ let Myclass = class {
         document.getElementById("theWeb"+r).innerHTML = this.siteweb;
     }
     }
-     //inputlari doldurduktan sonra bir contact ekle
+     //inputlari doldurduktan sonra bir contact ekleME FONKSYONU                                    ************************
 
     btnAddN.addEventListener("click", function(){
 
@@ -266,6 +266,9 @@ let Myclass = class {
         alertF.style.display = "none";
         r+=1;
       
+
+
+        //her contact icin html formu/ ICINDE SILMEK ICIN BIR FUNKTION ONCLICK..
         var cntnt =`
            
 <div class="bar">
@@ -278,7 +281,7 @@ let Myclass = class {
 <div class="bar2">
     <span class="" id="theMail${r}">elmasaakiano@gmail.com</span>
    <span  id="theWeb${r}"> www.masaaki.com</span>
-    
+                                                 
   <span  style="color:rgb(154, 31, 150);" onClick="this.parentElement.parentElement.remove()"> <i class="far fa-trash-alt"></i></span>
     
 
@@ -292,8 +295,15 @@ let Myclass = class {
      
        oneLine.innerHTML +=cntnt;
        document.getElementById("ulContact").classList.add("fadeIn")
+
+       //yeni class olusturuyorum myClass metodu ile. degerler ise yeni girilen bilgiler ile islem yapilacak
         let addNow = new Myclass(isim.value, telefon.value, mailadres.value, website.value);
+
+      //class icindeki metodu kullanarak yeni girilmis degerleri html icinde yazdiriyorum. her seferinde yeni olusan id sayesinde verileri  
+      //id'ye ait ekrana yerlestiriyorum
         addNow.addValues()
+
+        //verileri silinmesi
         isim.value = "";
         telefon.value = "";
         mailadres.value = "";
@@ -305,30 +315,44 @@ let Myclass = class {
   function  modify(){
       this.parentElement.children[0].textContent
   }
+                      //#################    CONTACT LIST APP END    ###########################
 
-//partie Blocknote
-var openNotes = document.getElementById("notesave");
-openNotes.addEventListener("click",function(){
-    leTittre.innerHTML = " My Notes"
-    alertF.style.display = "none";
+
+
+
+/*
+Note Kaydetmek Bolumu
+Burada bir giris ekrani olusturdum (note icerigi icin)
+bir input olusturdum (note basligi icin)
+her not eklendiginde yeni bir note olacak notlar kisminda ve asil not yazisi eklenecek olan not html icinde gizlenmis bir paragraf
+icinde yer alicak.
+notu goster butona tiklaninca p icindeki deger screen ekrana gelecek
+
+*/
+var openNotes = document.getElementById("notesave");  //buyuk menude not sayfasi acmak butonu 
+openNotes.addEventListener("click",function(){   //buton tikalmak (note sayfasi acmak)
+    leTittre.innerHTML = " My Notes"     //baslik
+    alertF.style.display = "none";     //hatali mesaji gizlemek eger acik ise
     
-    document.getElementById("cnt").style.display = "none";
-    document.getElementById("tDoList").style.display = "none";
-    document.getElementById("MnyM").style.display = "none";
-    document.getElementById("blockNt").style.display = "block"
-    document.getElementById("blockNt").classList.add("fadeIn");
-    document.getElementById("parameters").style.display = "none";
+    document.getElementById("cnt").style.display = "none";     //diger sayfalar kapatmak eger acik ise
+    document.getElementById("tDoList").style.display = "none";   //diger sayfalar kapatmak eger acik ise
+    document.getElementById("MnyM").style.display = "none";     //diger sayfalar kapatmak eger acik ise
+    document.getElementById("blockNt").style.display = "block"   //Note sayfasini gosyermek
+    document.getElementById("blockNt").classList.add("fadeIn"); //css animasyonu eklemek
+    document.getElementById("parameters").style.display = "none";    //diger sayfalar kapatmak eger acik ise
 });
 
-var addNote = document.getElementById("sNote");
-var noteTitle = document.getElementById("ntlt");
-var quoteV = document.getElementById("writeNote");
-var veiwQuote = document.getElementById("noteVeiw");
+var addNote = document.getElementById("sNote");   //veriler girdikten sonra notu kaydetmek icin basilacak buton
+var noteTitle = document.getElementById("ntlt");   //note icin girilmis baslik
+var quoteV = document.getElementById("writeNote");  //note icin girilmis note yazisal degeri (note asli)
+var veiwQuote = document.getElementById("noteVeiw");  //note gormek isteyince gorunecek ekran yeri
 var l = 1;
 var vt = 1;
+
+//VERILER GIRILDIKTEN SONRA NOTE- EKLE BUTONA TIKLANINCA CALISACAK FUNKTION                   **************************
 addNote.addEventListener("click",function(){
     alertF.style.display = "none";
-   
+   //SARTLAR
  if(quoteV.value == "" || noteTitle.value == ""){
        alertF.style.display = "block";
     alertF.innerHTML = " Please enter valid information";
@@ -336,6 +360,7 @@ addNote.addEventListener("click",function(){
 else{
     vt +=1 ;
      
+    //note html 
 var domQuote = `
   
 <div class="quote" id="">
@@ -350,70 +375,62 @@ Note du chef pour batir...
 </div>
 `
 
-
+        //html ve icinde girilmis degerlerle kaydedilmis notlar listesine eklemek
     document.getElementById("notesQuoiteArea").innerHTML +=domQuote;
 
-    document.getElementById("lEtITRE"+l).innerHTML = noteTitle.value
-    document.getElementById("laQuote"+vt).innerHTML = quoteV.value;
+    document.getElementById("lEtITRE"+l).innerHTML = noteTitle.value //yeni eklenecek not listesi uzerinde girilmis basligi yazmak
+    document.getElementById("laQuote"+vt).innerHTML = quoteV.value; //gizli olan paragrafa note yazisal degeri yerlestirmek
     l+=1;
     quoteV.value = "";
     noteTitle.value = "";
     
 }
 });
+                         //#################  NOTES LIST APP END    ###########################
 
 
-//APP CONSTANTS AND VARS
-const KELVIN = 273;
-const key = "82005d27a116c2880c8f0fcb866998a0";
-function getWeather(latitude, longitude){
-    let api = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${key}`;
 
 
-fetch(api).then(function(response){
-    let data = response.json();
-    return data;
-}).then(function(data){
 
-});
-
-}
 
 // PARAMETRELER
 document.getElementById('parameters').style.display = "none";
-
 var parameters = document.getElementById("parametersBtn");
+
 parameters.addEventListener("click",function(){
-    document.getElementById('parameters').style.display = "block";
+    document.getElementById('parameters').style.display = "block";//PARAMETRE SAYFASI GOSTERMEK
     leTittre.innerHTML = " Settings";
     alertF.style.display = "none";
-    
-    restoreArea.style.display = "none";
-    securityArea.style.display = "none";
-    deleteArea.style.display = "none";
 
+   //parametre sayfasini gostermek ve diger sayfalari (note todolist vb) kapatmak
     document.getElementById("parameters").style.display = "block";
     document.getElementById("parameters").classList.add("fadeIn")
     document.getElementById("tDoList").style.display = "none";
     document.getElementById("MnyM").style.display = "none";
     document.getElementById("blockNt").style.display = "none";
     document.getElementById("cnt").style.display = "none";
+
+    //parametreler icinde toplam 4 sayfa var ve otomatik olarak hepsi gorunuyor
+    restoreArea.style.display = "none";  //parametreler icinde diger parametre sayfalari gizlemek
+    securityArea.style.display = "none"; //parametreler icinde diger parametre sayfalari gizlemek
+    deleteArea.style.display = "none";  //parametreler icinde diger parametre sayfalari gizlemek
+
 });
 
 // DIFFERANTE VARIABLES FOR PARAMETER ELEMENTS
-//les buttons
+//parametre sayfasi icndeki 4 element sayfalarin butonlari
 var themeBtn = document.getElementById("restoreAreaId");
 var restoreBtn = document.getElementById("paramRestId");
 var updateBtn = document.getElementById("paramDeleteId");
 var deleteBtn = document.getElementById("paramChangeId");
 
-// Rich the processes areas
+//parametre sayfasi icndeki 4 element sayfalarin html alanlari 
 var themeArea = document.getElementById("themeId");
 var restoreArea = document.getElementById("restoreId");
 var securityArea = document.getElementById("securityId");
 var deleteArea = document.getElementById("deleteId");
 
-//event listeners
+//parametrelar icinde tema ayarlar sayfasini acmak icin diger parametre icindeki parametre sayfalari kapatmak
 themeBtn.addEventListener("click",function(){
    // leTittre.innerHTML = " Settings";
     alertF.style.display = "none";
@@ -424,6 +441,7 @@ themeBtn.addEventListener("click",function(){
     securityArea.style.display = "none";
     deleteArea.style.display = "none";
 });
+//bilgilari sifirla
 restoreBtn.addEventListener("click",function(){
     // leTittre.innerHTML = " Settings";
      alertF.style.display = "none";
@@ -434,6 +452,8 @@ restoreBtn.addEventListener("click",function(){
      securityArea.style.display = "none";
      deleteArea.style.display = "none";
  });
+
+ //hesani sil
  deleteBtn.addEventListener("click",function(){
     // leTittre.innerHTML = " Settings";
      alertF.style.display = "none";
@@ -444,6 +464,8 @@ restoreBtn.addEventListener("click",function(){
      securityArea.style.display = "none";
      restoreArea.style.display = "none";
  });
+
+ //sifre bilgileri guncelemek
  updateBtn.addEventListener("click",function(){
     // leTittre.innerHTML = " Settings";
      alertF.style.display = "none";
