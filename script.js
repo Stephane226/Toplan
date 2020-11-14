@@ -10,7 +10,7 @@ var Sub = document.getElementById("AddTD");                  //todo eklemek
 var innerDom = document.getElementById("oneTd");            //bir uygulama yerlestigi alan
 var number = 1;
 var ul = document.createElement("ul");               
-var alertF = document.getElementById("alertpId");    // Hatali giris ekran mesaji yer
+var alertF = document.getElementById("alertpId");    // Hatali giris ekran mesajin yeri
 var leTittre = document.getElementById("leTittre");  // uygulama ismi yerlestigi yer
 var tDoL_Btn = document.getElementById("tDoLbtn");  //TODOLIST- butonu
 var MnM_Btn =document.getElementById("MnMbtn");      //Money management Butonu
@@ -182,7 +182,7 @@ Expense_Add.value = "";                // harcama ekleme giris ekrani bos yapmak
         var ulList = document.getElementById("ulHistorik");
         var myLiEx = `
         <li><span id="dew" style="color:red"><i class="fas fa-minus-square"></i></span>
-        <span style="color: red;">${Expense.value}</span> <span>02/04/2009</span>
+        <span style="color: red;">${Expense.value}</span> <span>${Expense_T.value}</span>
         <span onClick="expense_Screen.innerHTML = parseInt(expense_Screen.textContent) - parseInt(this.parentElement.children[1].textContent);
         this.parentElement.remove();balance_Screen.innerHTML = parseInt(balance_Screen.textContent) +
          parseInt(this.parentElement.children[1].textContent)"  style="color:rgb(154, 31, 150)">

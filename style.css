@@ -66,6 +66,8 @@ body button {
   font-size: 18px;
   font-weight: 500;
   border-right: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .ulElem ul li:hover {
@@ -89,7 +91,8 @@ body button {
 }
 
 .theTitle {
-  margin-left: 14px;
+  text-align: right;
+  margin-left: 400px;
 }
 
 .SpanIcon {
@@ -111,9 +114,9 @@ body button {
 .title {
   height: 40px;
   width: 100%;
-  background-color: #cfcfcf;
+  background-color: whitesmoke;
   margin: 0 auto;
-  text-align: center;
+  text-align: right;
   padding-top: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -949,5 +952,14 @@ section .parameters .paramsLine {
 
 .menuToggle {
   margin-left: -300px;
+}
+
+.forPcl {
+  color: white;
+  background-image: url("img/moodn.jpg");
+  background-size: cover;
+  background-color: #425664;
+  font-size: 16px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

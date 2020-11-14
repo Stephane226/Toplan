@@ -78,6 +78,8 @@ body{
     font-size:18px;
     font-weight:500;
     border-right: 10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
     
  }
  .ulElem ul li:hover{
@@ -102,7 +104,8 @@ background-image:url('img/moon.jpg');
 background-size:cover;
 }
 .theTitle{
-    margin-left:14px;
+   text-align: right;
+   margin-left:400px
 }
 .SpanIcon{
     
@@ -125,9 +128,9 @@ background-size:cover;
 .title{
     height:40px;
     width:100%;
-    background-color:rgb(207, 207, 207);
+    background-color:whitesmoke;
     margin:0 auto;
-    text-align:center;
+    text-align:right;
     padding-top:7px;
     display:flex;
     justify-content: space-between;
@@ -873,4 +876,13 @@ section .parameters{
 
 .menuToggle{
     margin-left:-300px
+}
+.forPcl{
+    color:white;
+    background-image: url('img/moodn.jpg');
+    background-size: cover;
+    background-color:$ThemeColor;
+    font-size:16px;
+    font-weight:600;
+
 }
