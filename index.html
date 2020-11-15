@@ -34,23 +34,30 @@
               <!-- START OF APP OF WEATHER-->
               <div class="forPcl" style="text-align:center">
                 <div class="container">
-                    <div class="app-title"><br><br>
-                        <p> <h3>Weather App</h3></p>
+                    <div class="app-title"><br>
+                        Enter Your City 
+                        <br>
+
+                       <input type="text" id="cNm"> <span style="font-size:15px;cursor:pointer" id="sbmt"><i class="fas fa-search"></i></span>
                     </div><br>
-                    <div class="notification"> </div>
+                    <div class="notification">
+                        <p id="location"></p>
+                         </div>
+                         <img id="temp-icon"  src="icon/snow.svg" width="70px" height="70px" alt="Getting weather icon...">
+
                     <div class="weather-container">
-                        <div class="weather-icon">
+                        <div class="temp-icon">
                         
                         </div>
                         <div class="temperature-value"><br>
-                            <p>18 °<span>C</span></p><br>
-                            19H30mn
+                            <p><span id="temp-value"></span> <span id="temp-unit" >°C</span></p><br>
+                            
                         </div>
                         <div class="temperature-description">
-                            <p> Mersin</p>
+                            <p id="climate"> </p>
                         </div>
                         <div class="location"><br><br>
-                            <p> Looks Fine</p> <br><br><br><br><br><br><br><br>
+                            <p> </p> <br><br>
                         </div>
                     </div>
                 </div>

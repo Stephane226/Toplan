@@ -3,7 +3,6 @@
 Genel HTML uzerindeki calisilacak ELEMENTLERIN belirlenmesi
 Buradaki degiskenler aciktir ve javascript kodlar boyunca kullanilacaktir
 -----------------------------------------------------------------------------------------*/
-
 var TodoTitle = document.getElementById("inp");                   //todolist baslik inputu
 var TodoDate = document.getElementById("TdDate");           //todolist tarihi inputu
 var Sub = document.getElementById("AddTD");                  //todo eklemek
@@ -484,3 +483,67 @@ restoreBtn.addEventListener("click",function(){
      menuFull.classList.toggle("menuToggle");
      menuFull.classList.add('fadeIn')
  }) 
+
+
+
+ // Weather App
+ let loc = document.getElementById("location");
+let tempIcon = document.getElementById("temp-icon")
+let tempValue = document.getElementById("temp-value");
+let tempUnit = document.getElementById("temp-unit");
+let climate = document.getElementById("climate");
+let iconFile; 
+cityName = document.getElementById("cNm");
+
+
+sbmt.addEventListener("click", () => {
+let long;
+let lat;
+if(navigator.geolocation){
+  navigator.geolocation.getCurrentPosition((position) => {
+    long = position.coords.longitude;
+    lat = position.coords.latitude;
+    const proxy ="https://cors-anywhere.herokuapp.com/";
+    const api = `
+    ${proxy}api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=9afd12c2e4b2208e8c6b99df137c1d9a`;
+  
+
+    fetch(api)
+    .then((response) =>{
+       return response.json();
+    })
+    .then((data) =>{
+      
+      const {name} = data;
+      const {feels_like} = data.main;
+      const {id, main} = data.weather[0];
+      loc.textContent = name;
+      climate.textContent = main;
+      tempValue.textContent = Math.round(feels_like - 273);
+      if (id<250){
+        tempIcon.src = './icon/storm.svg' ;
+      }
+      else if (id<350){
+        tempIcon.src = './icon/drizzle.svg' ;
+      }
+      else if (id<550){
+        tempIcon.src = './icon/rain.svg' ;
+      }
+      else if (id<650){
+        tempIcon.src = './icon/snow.svg' ;
+      }
+      else if (id<800){
+        tempIcon.src = './icon/atmosphere.svg' ;
+      }
+      else if (id===800){
+        tempIcon.src = './icon/sun.svg' ;
+      }
+      else if(id>800){
+        tempIcon.src = './icon/clouds.svg' ;
+      }
+      console.log(data);
+      
+    })
+  })
+}
+});
