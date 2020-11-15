@@ -520,6 +520,7 @@ if(navigator.geolocation){
       loc.textContent = name;
       climate.textContent = main;
       tempValue.textContent = Math.round(feels_like - 273);
+      document.getElementById("temp-unit").style.display = "inline-block"
       if (id<250){
         tempIcon.src = './icon/storm.svg' ;
       }

@@ -956,9 +956,10 @@ section .parameters .paramsLine {
 
 .forPcl {
   background-color: #425664;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#36d1dc), to(#5b86e5));
-  background-image: linear-gradient(#36d1dc, #5b86e5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#425664), to(#5b86e5));
+  background-image: linear-gradient(#425664, #5b86e5);
   color: white;
+  height: 53%;
   background-color: #425664;
   font-size: 16px;
   font-weight: 600;
